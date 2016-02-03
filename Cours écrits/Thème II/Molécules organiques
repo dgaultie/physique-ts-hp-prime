@@ -1,0 +1,30 @@
+~~~ Molécules organiques ~~~
+
+CF 'Fonctions Chimiques' pour les fonctions chimiques essentielles ►
+WAIT();
+fonctions_chimiques()
+PRINT();
+
+*Transmittance : 
+
+	 It
+T = ----
+     Io
+
+*Absorbance : 
+
+
+		 / It \
+A = -log |----|
+         \ Io /  
+
+où A est sans unité.         
+
+A=ε\λ*l*c
+
+où A sans unité ; ε en mol.L^-1 ; en m λ ; c en m^-1.mol^-1.L
+
+*Spectroscopie RMN
+- Signaux, catégories de H.
+- Nom de pics, voisins (multiplicité)
+- Hauteur de saut, nombre de H dans une catégorie

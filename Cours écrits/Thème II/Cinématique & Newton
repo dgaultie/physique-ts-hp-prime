@@ -1,0 +1,39 @@
+~~~ Cinématique & Newton ~~~
+
+* a = Δv/Δt
+
+* Dérivée de bases à connaître : 
+
+v = dOM/dt
+
+a = dv/dt
+
+OM = vecteur position
+v  = vecteur vitesse instantanée
+a  = vecteur accélération
+
+*Calcul du poids : P=m*g
+
+*Poussée d'Archimède : π=ρ*V*g
+
+où ρ : masse volumique (kg.m^-3)
+
+*Première loi de Newton
+
+∑F = 0 -> Vitesse constante
+
+Quantité de mouvement : 
+
+p = m*v
+
+*Deuxième loi de Newton
+∑F = dp/dt
+
+Masse constante : 
+
+∑F = m*a
+
+*Troisième loi de Newton
+ ->      ->
+ FF   = -FF
+(A/B)  (B/A)

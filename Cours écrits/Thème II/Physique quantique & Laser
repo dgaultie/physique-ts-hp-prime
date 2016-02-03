@@ -1,0 +1,72 @@
+~~~ Physique quantique & LASER ~~~
+
+*Energie d'un photon
+			
+		   h.c
+E = h.ν = -----
+            λ
+
+h = 6.62606957e-34
+
+*Quantité de mouvement
+
+p=m*v
+
+où : p en kg.m.s^-1 ; m en kg ; v en m.s^-1
+
+*Relation de Broglie :
+
+     h
+p = ---
+	 λ	
+
+où : p en kg.m.s^-1 ; m en kg ; v en m.s^-1
+
+Excitation d'un atome : un atome peut absorber une
+certaine quantité d'énergie sous la forme de photon
+si Ep-En = h.ν (=E).
+
+Désexcitation : émission spontanée, émision d'un photon
+d'énergie Ep-En	= h.ν .
+
+L'émission stimulée : lorsqu'un atome dans un état
+d'énergie excité Ep, intéragit avec un photon 
+d'énergie h.ν, l'atome se désexcite en émettant un photon
+de même énergie : Ep-En = h.ν .
+
+Schéma : Niveaux d'énergie ►
+
+  ▲
+  |       h.ν           h.ν
+Ep|. . . . . . .► ◯ . . . . . .►
+  |-----------------------------
+  |               |             
+  |               |
+  |               |
+  |               | . . . . . .►
+  |               |      h.ν
+  |               ▼
+En|-----------------------------
+
+Les deux photons ont : 
+- La même direction
+- Le même sens
+- La même longueur d'onde et sont en phase
+
+-> La lumière du LASER est dite cohérente.
+
+*Inversion de population : Etat stable E1. Flash -> E3 peu stable 
+-> E2 plus stable
+
+*L'amplification : deux miroirs, dont un partiellement réfléchissant.
+
+*Propriétés du LASER : 
+- Lumière monochromatique : une longueur d'onde
+- Lumière cohérente
+- Rayonnement de forte puissance
+
+
+
+
+
+ 

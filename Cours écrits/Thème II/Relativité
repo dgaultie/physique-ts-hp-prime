@@ -1,0 +1,22 @@
+~~~ Relativité ~~~
+
+Temps propre : durée entre deux évènements se produisant en un même
+lieu de l'espace dans un référentiel donné.
+
+Temps mesuré : durée entre deux évènements liés à un emplacement 
+dans un référentiel considéré.
+
+
+                Δtempspropre
+Δtempsmesuré = --------------
+                 √(1-(v/c)²)
+
+Coefficient de Lorentz : 
+
+          1
+γ = --------------
+     √(1-(v/c)²)
+
+
+Δtempsmesuré = γ*Δtempspropre
+

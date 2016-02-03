@@ -1,0 +1,1421 @@
+//Menus
+MENU_THEME1();
+MENU_THEME2();
+MENU_THEME3();
+MENU_AUTRE();
+//Thème I
+T1_OP();
+T1_OPA();
+T1_PO();
+//Thème II
+T2_CN();
+T2_MCU();
+T2_TEM();
+T2_RC();
+T2_AB();
+T2_TEO();
+T2_PQL();
+T2_MO();
+T2_RS();
+T2_R();
+T2_O();
+//Thème III
+T3_DE();
+T3_DT();
+T3_SO();
+T3_TSI();
+T3_SAN();
+T3_EEE();
+//Autre
+T4_FC();
+T4_C();
+
+TS();
+EXPORT TS()
+BEGIN
+
+LOCAL A=0,B=0,C=0,D=0,E=0,F=0,G=0,H=0;
+LOCAL I=0,J=0,K=0,L=0,M=0,N=0,O=0,Q=0;
+LOCAL P=0,R=0,S=0,T=0,U=0,V=0,W=0,X=0;
+
+CHOOSE(A,"Choisissez un thème", "Thème I : Ondes et matières", "Thème 2 : Lois et modèles", "Thème 3 : Défis du XXI siècle", "Autre");
+PRINT();
+//Thème I
+IF A==1 THEN
+MENU_THEME1();
+END;
+
+//Thème II
+IF A==2 THEN
+MENU_THEME2();
+END;
+
+//Thème III
+IF A==3 THEN
+MENU_THEME3();
+END;
+
+//Autre
+IF A==4 THEN
+MENU_AUTRE();
+END;
+
+
+END;
+
+
+//Menu Thème 1
+MENU_THEME1()
+BEGIN
+CHOOSE(B, "Thème I", "Ondes et particules", "Ondes périodique/acoustiques", "Propriétés des ondes");
+
+//Ondes et particules
+IF B==1 THEN
+T1_OP();
+END;
+
+//Ondes périodiques/acoustiques
+IF B==2 THEN
+T1_OPA();
+END;
+
+//Propriétés des ondes
+IF B==3 THEN
+T1_PO();
+END;
+
+END;
+
+//Menu Thème 2
+MENU_THEME2()
+BEGIN
+CHOOSE(C,"Thème II", "Cinématique & Newton", "Mvmt dans un champ uniforme", "Travail et énergie mécanique", "Réaction & Cinématique", "Acides & Bases", "Transfert en chimie organique", "Physique quantique & Laser", "Molécules organiques", "Représentation spatiale", "Relativité", "Oscillations");
+
+//Cinématique & Newton
+IF C==1 THEN
+T2_CN();
+END;
+
+//Mouvement dans un champ uniforme
+IF C==2 THEN
+T2_MCU();
+END;
+
+//Travail et énergie mécanique
+IF C==3 THEN
+T2_TEM();
+END;
+
+//Réaction & Cinématique
+IF C==4 THEN
+T2_RC();
+END;
+
+//Acides & Bases
+IF C==5 THEN
+T2_AB();
+END;
+
+//Transfert en énergie organique
+IF C==6 THEN
+T2_TEO();
+END;
+
+//Physique quantique & Laser
+IF C==7 THEN
+T2_PQL();
+END;
+
+//Molécule organiques
+IF C==8 THEN
+T2_MO();
+END;
+
+//Représentation spatiale
+IF C==9 THEN
+T2_RS();
+END;
+
+//Relativité
+IF C==10 THEN
+T2_R();
+END;
+
+//Oscillations
+IF C==11 THEN
+T2_O();
+END;
+
+END;
+
+//Menu Thème 3
+MENU_THEME3()
+BEGIN
+CHOOSE(D,"Thème III", "Dosages par étalonnage", "Dosages par titras", "Synthèses organiques", "Transmettre et stocker l'info", "Signal analogique et numérique", "Enjeux pour la planète");
+
+//Dosages par étalonnage
+IF D==1 THEN
+T3_DE();
+END;
+
+//Dosages par titras
+IF D==2 THEN
+T3_DT();
+END;
+
+//Synthèses organiques
+IF D==3 THEN
+T3_SO();
+END;
+
+//Transmettre et stocker l'information
+IF D==4 THEN
+T3_TSI();
+END;
+
+//Signal analogique et numérique
+IF D==5 THEN
+T3_SAN();
+END;
+
+//Enjeux énergétiques et environnementaux
+IF D==6 THEN
+T3_EEE();
+END;
+
+END;
+
+//Menu Autre
+MENU_AUTRE()
+BEGIN
+CHOOSE(E,"-Autre-", "Formules de Chimie", "Crédits");
+
+//Formule de Chimie
+IF E==1 THEN
+T4_FC();
+END;
+
+//Crédits
+IF E==2 THEN
+T4_C();
+END;
+END;
+
+//--------------------Thème I --------------------\\
+
+//T1_OP Thème I - Ondes et particules
+T1_OP()
+BEGIN
+PRINT("
+                  ~~~ Ondes et particules ~~~
+
+
+*Rayonnement : propagation d'une perturbation.
+Pas de support matériel.
+
+*Photon : particule associée à l'énergie 
+électromagnétique
+
+*Onde mécanique progressive : propagation d'une perturbation dans un 
+milieu matériel. Propagation de proche en proche. Sans transport de matière.
+
+*Retard : durée séparant le passage d'une onde en
+deux points prit dans le même état 
+vibratoire.
+
+*Célérité : vitesse de propagation d'une onde.
+
+v = d/t où v(meca) c(elec)
+
+*Onde mécanique transversale : déformation perpendiculaire à la
+direction de la propagation de l'onde.
+
+*Onde mécanique longitudinale : déformation colinéaire
+
+f = 1/T
+
+v = λ/T
+");
+END;
+
+//T1_OPA Thème I - Ondes périodiques, acoustiques
+T1_OPA()
+BEGIN
+PRINT("
+         ~~~ Ondes périodiques, acoustiques ~~~
+
+*Onde progressive périodique : propagation d'une perturbation,
+générée par une source dont l'excitation se répète, à intervalle régulier
+au cours du temps.
+
+*Période : durée la plus courte durant le passage d'une perturbation
+identique en un point du milieu de propagation.
+
+*Son : onde mécanique, progressive, périodique, longitudinale.
+
+v = 340 m.s^-1
+
+Sons audibles : 20Hz-20kHz
+
+L = 10log (I/Io)
+
+où Io = 10^-12
+");
+END;
+
+//T1_PO Thème I - Propriétés des ondes
+T1_PO()
+BEGIN
+PRINT("
+         ~~~ Propriétés des ondes ~~~
+
+
+La dimension de l'obstacle doit être proche de λ
+
+Schémas : Extinctions puis Interférences ►
+");
+
+WAIT();
+RECT();
+
+LOCAL I=55;
+LOCAL J=20;
+LINE_P(40+J,26+I,40+J,58+I);
+LINE_P(40+J,70+I,40+J,100+I);
+LINE_P(252+J,2+I,252+J,126+I);
+LINE_P(36+J,70+I,20+J,86+I);
+LINE_P(40+J,64+I,252+J,64+I);
+LINE_P(40+J,64+I,252+J,84+I);
+LINE_P(40+J,64+I,252+J,44+I);
+LINE_P(160+J,64+I,158+J,74+I);
+
+TEXTOUT_P("θ",165+J,63+I);
+TEXTOUT_P("a",10+J,83+I);
+
+WAIT();
+RECT();
+
+LINE_P(50,204,287,204);
+LINE_P(50,204,50,150);
+LINE_P(50,135,50,106);
+LINE_P(50,90,50,35);
+LINE_P(287,204,287,35);
+LINE_P(35,98,287,80);
+LINE_P(35,142.5,287,80);
+LINE_P(35,98,35,142.5);
+LINE_P(295,80,295,120.5);
+LINE_P(50,120.5,287,120.5,#CC0000);
+
+TEXTOUT_P("a",40,112);
+TEXTOUT_P("D",168.5,204);
+TEXTOUT_P("x",300,92.5);
+
+WAIT();
+RECT();
+
+PRINT("
+* Ecart angulaire : θ = λ/a
+
+*Diffraction par fente de 1 mm = diffraction
+par fil de 1 mm
+
+* λ plus grand : lumière plus déviée
+
+*Interférences : deux ondes se superposent, leur 
+amplitude s'ajoutent.
+Deux sources synchrones, même λ, en phase.
+
+*Différence de marche :
+
+δ = a*x/D
+
+*Deux ondes en phase :
+
+δ = k*λ
+
+*En opposition de phase :
+
+δ = (k+1/2)*λ
+
+*Effet Doppler
+
+Quand l'objet s'éloigne :
+fr = fe*c/c+v
+
+Quand l'objet d'approche :
+fr = fe*c/c-v
+
+fr = fréquence reçue
+fe = fréquence émise
+");
+
+
+END;
+
+//--------------------Thème II --------------------\\
+
+//Cinématique & Newton
+T2_CN()
+BEGIN
+PRINT("
+       ~~~ Cinématique & Newton ~~~
+
+
+* a = Δv/Δt
+
+* Dérivée de bases à connaître : 
+
+v = dOM/dt
+
+a = dv/dt
+
+OM = vecteur position
+v  = vecteur vitesse instantanée
+a  = vecteur accélération
+
+*Calcul du poids : P=m*g
+
+*Poussée d'Archimède : π=ρ*V*g
+
+où ρ : masse volumique (kg.m^-3)
+
+*Première loi de Newton
+
+∑F = 0 -> Vitesse constante
+
+Quantité de mouvement : 
+
+p = m*v
+
+*Deuxième loi de Newton
+∑F = dp/dt
+
+Masse constante : 
+
+∑F = m*a
+
+*Troisième loi de Newton
+ ->      ->
+ FF   = -FF
+(A/B)  (B/A)
+");
+END;
+
+//Mouvement dans un champ uniforme
+T2_MCU()
+BEGIN
+PRINT("
+       ~~~ Mouvement dans un champ uniforme ~~~
+
+Décrit par le 'vecteur champ'
+
+   Va-Vb     Uab
+E =----- =  -----
+     d        d
+
+            (V)
+(V.m^-1) = -----
+            (m)
+
+* Méthode d'étude d'un mouvement : 
+
+- Préciser le système et le référentiel
+- Faire le bilan des forces 
+- Utiliser la deuxième loi de Newton
+- Obtenir les équations de la vitesse depuis 
+la quantité de mouvement
+- Obtenir les équations horaires            
+- Etablir l'équation cartésienne
+
+*Equations horaires :
+
+x(t) = Vo*cos(θ)*t
+
+z(t) = -(1/2)gt² + Vo*cos(θ)*t
+
+*Equation cartésienne : 
+
+
+             -g
+z(x) = ---------------*x² + tan(θ)*x
+        2(Vo*cos(θ))²
+
+*Force électrique : 
+⇒     ⇒
+F = q*E
+");
+END;
+
+//Travail et énergie mécanique
+T2_TEM()
+BEGIN
+PRINT("
+             ~~~ Travail, énergie mécanique ~~~
+
+
+* Différentes énergies mécaniques
+
+Ec = (1/2)*mv²
+
+où Ec en J ; m en kg ; v en m.s^-1
+
+Epp = mgz
+
+où Epp en J ; m en kg ; g en m.s^-2 ; z en m
+
+Epe = (1/2)*k*x²
+
+où k : constante de raideur
+   x : élongation du ressort par rapport
+       à sa position d'équilibre
+
+
+*Travail d'une force : transfert d'énergie du système soumit à 
+l'action d'une force dont le point d'application se déplace.
+
+ ⇒ ⇒   ⇒ ⇒
+ W(F) = F*AB = F*AB*cos(α)
+(AB)
+
+où W(F) en J ; F en N ; AB en m
+
+*Conséquences de l'angle α
+
+- α<90° alors W>0 : Travail moteur
+
+- α=90° alors W=0 : Travail nul
+
+- α>90° alors W<0 : Travail résistant
+
+
+*Travail du poids : 
+
+m*g*(za-zb)
+
+*Travail d'une force électrique : 
+
+q*E*AB*cos(α)
+
+où : q en C ; E en V.m^-1 ; AB et cos(α) en m
+
+=q*(Va-Vb)
+
+où q en C ; (Va-Vb) en V
+
+=q*Uab
+
+où q en C ; Uab en V
+
+*Si les forces ne sont pas conservatives : 
+
+Wf(1)≠W:tan(2)
+
+(1) au point 1
+(2) au point 2
+
+*Comportement de l'énergie mécanique
+        ⇒
+ΔEp = -WF
+      (ab)
+
+Em = Ec + Ep
+
+La variation de l'énergie mécanique d'un système, en mouvement
+entre deux points A et B, est égale à la somme des travaux des
+forces non-conservatives.
+Si le système ne subit que des forces conservatives, son énergie 
+mécanique est constante au cours du mouvement.
+
+ΔEm =0
+
+Si le système subit au moins une force conservative, Em diminue.
+");
+END;
+
+//Réaction & Cinématique
+T2_RC()
+BEGIN
+PRINT("
+            ~~~ Réaction/Cinétique ~~~ 
+
+*Oxydant : entité chimique capable de gagner un électron.
+
+*Réducteur : entité chimique capable de céder un électron.
+
+*Etablir une demi-équation électronique : 
+
+- Milieu acide + basique : équilibrer tout ce qui n'est pas 
+O ni H.
+
+- Equilibrer O en ajout H\2O.
+
+- Equilibrer H en ajoutant H^+
+
+- Equilibrer les charges en ajoutant e^-
+
+*Pour les milieux basiques : neutraliser les H^+ en ajoutant 
+HO^-. Eventuellement simplifier les H\2O.
+
+*Facteurs cinétiques : 
+
+- La température : arrête la réaction = trempage
+
+- Concentration des réactifs 
+
+- Nature du solvant : polaire, apolaire
+
+- Présence d'un catalyseur
+
+*Différentes catalyses
+
+- Homogène : le catalyseur et les réactifs constituent
+une seule phase (solide, liquide, gazeuse)
+
+- Hétérogène : plusieurs phases.
+
+- Enzymatique : le catalyseur est une enzyme.
+
+- Photocatalyse : action de la lumière qui accèlère 
+une réaction chimique.
+
+- Autocatalyse : la réaction chimique produit elle-même
+son propre catalyseur.
+");
+END;
+
+//Acides & Bases
+T2_AB()
+BEGIN
+PRINT("
+                  ~~~ Acides & Bases ~~~
+
+
+*Acide : libère H^+
+
+*Base : capte H^+
+
+*Couple acide/base
+
+HA/A^-
+
+HA ↔ A^- + H^+
+
+H\3O^+ : ion oxonium
+HO^-   : ion hydroxyde
+
+*Réaction A-B : échange d'un ion H^+ entre l'acide d'un couple
+et la base d'un autre couple.
+
+*Formule du pH : 
+
+pH = -log [A]
+
+[A] = 10^(-pH)
+
+*Acide ou base faible : réaction avec l'eau
+non totale.
+
+
+*Constante d'acidité d'un couple acide-base AH/A^- !
+
+    [A^-]eq*[H\3O^+]eq
+Ka = --------------------
+            [HA]eq
+
+pKa = -log Ka
+
+Ka = 10^(-pKa)            
+
+                [A-]eq
+pH = pKa + log --------
+                [HA]eq
+
+A^- : Base
+HA  : Acide                
+
+
+            [AH]=[A^-]
++ d'acidité      + de basicité
+----------------|----------------
+             pH=pKa
+
+
+*Bases fortes : pH = 14 + log C
+
+HCl + H\2O -> Cl^- + H\3O^-
+
+     H\2O
+NaOH ---> Na^+ + HO^-             
+
+*Basicité force et acidité forte : réaction exothermique
+57kJ.mol^-1
+
+
+*Autoprotolyse de l'eau : 
+
+  H\2O + H\2O
+       ↔
+HO^-aq + H\3O^+aq
+
+*Produit ionique de l'eau : 
+
+Ke = [H\3O^+]eq*[HO^-]eq
+
+
+Ke = 1.0e-14
+pKe = -log Ke
+Ke = 10^(-pKe)
+pKe = 14.0
+
+*Variations du pH
+
+pH<7 -> [H\3O^+]>[HO^-]
+pH>7 -> [H\3O^+]<[HO^-]
+pH=7 -> [H\3O^+]=[HO^-]
+
+*Solution neutre : solution dont la composition est telle
+que le pH varie peu par ajout de petites quantitées d'acide
+ou de base ou par dilution.
+
+");
+END;
+
+//Transfert en chimie organique
+T2_TEO()
+BEGIN
+PRINT("
+                     ~~~ Transfert chimie organique ~~~
+
+
+*Différentes couches électroniques :
+- Couche K : 2 électrons
+- Couche L : 8 
+- Couche M : 18
+
+*Tous les atomes cherchent à former des liaisons de covalence
+ou des ions de façon à acquiérir la structure électronique du
+gaz rare életroniquement le plus proche. Pour cela il suivent
+la règle du Duet ou de l'Octet.
+
+*Représentation de Lewis : il s'agit d'une représentation d'une molécule
+en formule semi-developpée sur laquelle on fait apparaître les liaisons 
+covalentes et les doublets non-liants de chaque atome.
+
+*L'électronégativité est une grandeur relative qui traduit l'aptitude d'un
+atome A à attirer à lui le doublet d'électron qui l'associe à une autre atome
+B par une liaison covalente.
+
+*Plus l'atome est électronégatif, plus il attire les électrons. L'atome porte
+alors une charger partielle négative (-Δ), l'autre autome auquel il est lié se 
+voit attribuer une charge partielle (+Δ).
+
+*Site donneur de doublets d'électrons : dans un édifice chimique, un atome
+porteur de doublet(s) non-liant(s) ou pourteur d'une charge électrique négative (-)
+est un site donneur de doublets d'électrons. Un tel site est appelée Nucléophile.
+Site donneur : site riche en électrons.
+
+*Site accepteur de doublet d'électrons : dans un édifice chimique, un atome porteur
+d'une charge électrique positive (+) est un site accepteur de doublets d'électrons.
+Un tel site est appelé site électrophile.
+
+*Mécanisme réactionnel : apsect microscopique d'une réaction. Lors d'une transformation,
+l'ensemble des réactions qui se produisent au niveau microscopique constitue le 
+mécanisme réactionnel. Chacune de ces réaction est une étape du mécanisme réactionnel de
+l'interraction entre un site donneur et accepteur de doublets d'électrons.
+
+*Le déplacement des doublets d'électrons : le mouvement de ce doublet d'électrons peut 
+être représenté par une flèche courbé, reliant le site donneur au site accepteur du doublet 
+d'électrons. Ces flèches courbés permettent d'expliquer la formation ou la rupture
+des liaisons au cours de ces réactions.
+La flèche part toujours d'un doublet d'électrons et point vers le site accepteur.
+
+*Substitution : dans une réaction de substitution, un atome (ou un groupe d'atomes)
+est remplacé par une autre atome (ou groupe d'atomes).
+
+*Addition : dans une réaction d'addition, des atomes ou des groupes d'atomes sont ajoutés
+aux atomes d'une liaison multiple.
+
+*Elimination : dans une réaction d'élimination, des atomes ou des groupes d'atomes portés 
+par des atomes adjacents, sont éliminés pour former une liaison multiple.
+
+");
+END;
+
+//Physique quantique & Laser
+T2_PQL()
+BEGIN
+PRINT("
+          ~~~ Physique quantique & LASER ~~~
+
+
+*Energie d'un photon
+      
+           h.c
+E = h.ν = -----
+            λ
+
+h = 6.62606957e-34
+
+*Quantité de mouvement
+
+p=m*v
+
+où : p en kg.m.s^-1 ; m en kg ; v en m.s^-1
+
+*Relation de Broglie :
+
+     h
+p = ---
+     λ  
+
+où : p en kg.m.s^-1 ; m en kg ; v en m.s^-1
+
+Excitation d'un atome : un atome peut absorber une
+certaine quantité d'énergie sous la forme de photon
+si Ep-En = h.ν (=E).
+
+Désexcitation : émission spontanée, émision d'un photon
+d'énergie Ep-En  = h.ν .
+
+L'émission stimulée : lorsqu'un atome dans un état
+d'énergie excité Ep, intéragit avec un photon 
+d'énergie h.ν, l'atome se désexcite en émettant un photon
+de même énergie : Ep-En = h.ν .
+
+Schéma : Niveaux d'énergie ►
+
+  ▲
+  |       h.ν           h.ν
+Ep|. . . . . . .► ◯ . . . . . .►
+  |-----------------------------
+  |               |             
+  |               |
+  |               |
+  |               | . . . . . .►
+  |               |      h.ν
+  |               ▼
+En|-----------------------------
+
+Les deux photons ont : 
+- La même direction
+- Le même sens
+- La même longueur d'onde et sont en phase
+
+-> La lumière du LASER est dite cohérente.
+
+*Inversion de population : Etat stable E1. Flash -> E3 peu stable 
+-> E2 plus stable
+
+*L'amplification : deux miroirs, dont un partiellement réfléchissant.
+
+*Propriétés du LASER : 
+- Lumière monochromatique : une longueur d'onde
+- Lumière cohérente
+- Rayonnement de forte puissance
+
+");
+END;
+
+//Molécules organiques
+T2_MO()
+BEGIN
+PRINT("               ~~~ Molécules organiques ~~~
+
+
+Fonctions chimiques essentielles ►
+");
+WAIT();
+fonctions_chimiques();
+PRINT();
+PRINT("
+*Transmittance : 
+
+     It
+T = ----
+     Io
+
+*Absorbance : 
+
+
+         / It \
+A = -log |----|
+         \ Io /  
+
+où A est sans unité.         
+
+A=ε\λ*l*c
+
+où A sans unité ; ε en mol.L^-1 ; en m λ ; c en m^-1.mol^-1.L
+
+*Spectroscopie RMN
+- Signaux, catégories de H.
+- Nom de pics, voisins (multiplicité)
+- Hauteur de saut, nombre de H dans une catégorie
+");
+END;
+
+//Représentation spatiale
+T2_RS()
+BEGIN
+PRINT("
+                                         ~~~ Représentation spatiale ~~~
+
+
+*Isomérie : deux molécules ayant la même formule brute mais des formules semi-developpées différentes.
+
+*Conformation d'une molécule : la liaison simple entre deux atomes de carbone permet la libre rotation des groupes autour
+de cette liaison.
+
+*Stabilité de la molécule : une molécule est plus stable (avec un minimum d'énergie) dans une conformation decalée.
+
+*Carbone asymetrique : c'est un carbone tétraedrique possédant 4 voisins (atomes ou groupe d'atomes) différents. 
+On le note C*.
+
+*Molécule chirale : molécule qui n'est pas superposable à son image dans un miroir plan.
+
+*Conditions de chiralite :
+1) Non superposable à son image dans un miroir
+
+2) Possède UN carbone asymetrique
+
+*Stéreoisomerie : isomérie qui diffère par la disposition dans l'espace des atomes constituants une molécule.
+
+*Enantiomères : stéreoisomeres possèdant un carbone asymetrique donc non superposable à leur image dans un miroir.
+
+*Distéreoisomères :stéréoisomeres non superposables et non symétriques dans un miroir plan. (Stéréoisomeres différents des
+énantiomères)
+
+*La rotation autour d'une double liaison C=C est IMPOSSIBLE.
+
+*Pour déterminer la nature Z ou E du diastéreoisomère, on regarde la position des groupes les plus massifs reliés aux 
+atomes de carbone de la liaison C=C par rapport a l'axe de la double liaison.
+Z : Du même côté
+E : De part et d'autre
+
+*Lorsqu'une molécule possède plusieurs carbones asymètriques, elle présente des énantiomères et des diastéreoisomères.
+
+*Enantiomères : temps fusion et ébultition identique. Propriétés chimiques identiques sauf dans le cas de réactions
+avec d'autres molécules chirales.
+
+*Diastéreoisomères : temps fusion et ébulition différents, propriétés chimiques différentes
+
+*Le mélange de deux énantiomères en proportions égales est appelé Racemique.
+
+*Lors d'une réaction de synthèse il est très difficile voire impossible de produire l'un ou l'autre uniquement des énantiomères.
+
+*Lors d'une réaction naturelle, il ne se forme qu'un seul des deux énantiomères.
+
+*La chiralite d'une molécule a un rôle essentiel dans les réactions biochimiques.
+
+");
+END;
+
+//Relativité
+T2_R()
+BEGIN
+PRINT("
+                          ~~~ Relativité ~~~
+
+
+Temps propre : durée entre deux évènements se produisant en un même
+lieu de l'espace dans un référentiel donné.
+
+Temps mesuré : durée entre deux évènements liés à un emplacement 
+dans un référentiel considéré.
+
+
+                Δtempspropre
+Δtempsmesuré = --------------
+                 √(1-(v/c)²)
+
+Coefficient de Lorentz : 
+
+          1
+γ = --------------
+     √(1-(v/c)²)
+
+
+Δtempsmesuré = γ*Δtempspropre
+
+");
+END;
+
+//Oscillations
+T2_O()
+BEGIN
+PRINT("
+                               ~~~ Oscillations ~~~
+
+
+
+*Oscillateur mécanique : tout système dont l'évolution est périodique.
+
+*Pendule simple : Masse ponctuelle à l'extrémité d'un fil inélastique (de longueur constante)
+
+*Période prorpe :
+
+        /l\
+T = 2π√(---)
+        \g/
+
+où T en s ; l est la longueur en m ; g le champ de pensanteur en m.s^-2
+
+
+*Période propre avec un pendule élastique :
+
+        /m\
+T = 2π√(---)
+        \k/
+
+où T en s ; m est la masse en kg ; k la constante de raideur du ressort en N.m^-1
+");
+END;
+
+//--------------------Thème III --------------------\\
+
+//Dosages par étalonnage
+T3_DE()
+BEGIN
+PRINT("
+                     ~~~ Dosages par étalonnage ~~~ 
+
+
+*Conductimétrie : toute solution contenant des ions dissous conduit le 
+courant électrique. 
+
+*Seuls les ions conduisent le courant électrique 
+en solution.
+
+*Plus la concentration des ions est élevée, plus la solution est 
+conductrice.
+
+*Certains ions sont de meilleurs conducteurs électriques que d'autres.
+
+*Loi de Kohlrausch
+
+δ = k.C
+
+où δ en S.m^-1
+
+*Dosage conductimétrique par étalonnage, que avec les ions.
+");
+END;
+
+//Dosages par titras
+T3_DT()
+BEGIN
+PRINT("
+                     ~~~ Dosages par titras ~~~
+
+
+*Le dosage est une méthode d'analyse physico-chimique visant à déterminer
+avec la plus grande précision possible, la concentration d'une espèce
+chimique dissoute en solution.
+
+*La solution titrante : solution de concentration connnue avec précision.
+
+*La prise d'essai : solution de concentration inconnue.
+Son volume est toujours connu avec grande précision.
+
+*Caractéristiques de la réaction : 
+- Réaction totale
+-Rapide
+-Unique
+
+*L'équivalence : mélange des réactifs des des proportions stoechiométriques
+de la réaction de titrage.
+
+*Volume équivalent : volume de solution titrante versée à l'équivalence.
+
+aA + bB --> dD + eE
+
+*Relat d'équivalence : 
+
+ n(A)      n(B)
+------ =  ------ 
+   a        b
+
+   
+");
+END;
+
+//Synthèses organiques
+T3_SO()
+BEGIN
+PRINT("
+                      ~~~ Synthèses organiques ~~~
+
+
+*Les quatre étapes de la synthèse : 
+
+1) La réaction
+2) L'isolement
+3) La purification
+4) L'analyse
+
+*Température : facteur cinétique, accélère la réaction.
+
+*Solvant : choisi pour la missibilité des réactifs (facteur cinétique).
+
+*pH : favorise la présence de la forme acide (AH) ou basique (A^-) 
+--> domaine de prédominance.
+
+*Différents montages : 
+-Agitation magnétique : pour une réaction rapide, produits peu volatiles.
+-Chauffage à reflux : accélère la réaction.
+-Distilation : thermomètre, colonne de Vigour, réfrigérant de Liebig.
+
+*Pour les réactions lentes. Extraction des produits formés du milieu
+réactionnel. 
+
+*Obtention d'un produit pur, augmentation du rendement d'une réaction
+limitée.
+
+*Dean Stark : permet d'éliminer lors de la synthèse un des produits
+formés.
+
+*Liste des méthodes d'analyse : 
+
+-Chromatographie sur Couche Mince (CCM)
+-Résonance Magnétique Nucléaire (RMN) et Infra-Rouge (IR)
+-Mesure du point de fusion
+-Mesure de l'indice de réfraction
+
+*Polyfonctionnel : plusieurs groupes caractéristiques.
+
+*Groupe protecteur : permet la réaction avec un seul groupe
+caractéristique.
+");
+END;
+
+//Transmettre et stocker l'information
+T3_TSI()
+BEGIN
+PRINT("
+    ~~~ Transmettre et stocker l'information ~~~
+
+
+*Bit : 0 ou 1
+
+*Octet/byte : 8bit
+
+*1 ko = 2e10 o = 1024 o
+
+*1 Mo = 2e20 o = 1024^2 o
+
+*1 Go = 2e30 o = 1024^3 o
+
+*Coefficient d'atténuation : 
+     
+     A     10      /Pe\
+α = --- = ---- log(----)
+     L      L      \Ps/
+
+
+*Débit binaire : 
+
+     n
+D = ----
+     Δt
+
+
+*Deux types de propagation : 
+-Guidée (fil)
+-Libre (sans fil)
+");
+END;
+
+//Signal analogique et numérique
+T3_SAN()
+BEGIN
+PRINT("
+           ~~~ Signal analogique et numérique ~~~ 
+
+
+*Résolution
+
+     plage de mesure
+p = -----------------
+           2^n
+
+*Les trois étapes de la numérisation : 
+1) Echantillonage
+2) Quantification
+3) Numérisation           
+
+*En augmentant la fréquence d'échantillonage et la résolution
+des convertisseur, on augmente la précision.
+");
+END;
+
+//Enjeux énergétiques et environnementaux
+T3_EEE()
+BEGIN
+PRINT("
+      ~~~ Enjeux énergétiques et environnementaux ~~~
+
+
+La chimie verte, c'est bien.
+");
+END;
+
+
+ICON AA 89504e470d0a1a0a0000000d4948445200000080000000800803000000f4e091f90000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c000000cc504c5445ffffffffff9cff0031ff2900ce0031ff2931ff0000ffadffff0063ffd69cce2963ff2963ff009cce0063ffad63ce2931ffadceffd6ffffffcece84cece0000ffd663ffad9cced6ffceadcece529cce5200ffad31ff529cff5200ce009cce2900ceadff00000063000031adce31000063adff3184ce9c2900310063ceffff3129636352000000630000319cd6ff9c29319cad630052ce00299c9cffffcead3100529c31003163003163d6ffce8431ceff9cffff6363290031849c6300639c5200635263ced69c002963ffffffb5ee71570000004374524e5300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000175fb75500000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000003324944415478daed988f73d23014c793d296868db2c6752aea6618a5ab63e828e0a653d4ffff8ff2bd971476bbc31d48576fbecfdd8e90179aeffb91e6dd8460188661fe29a4d7f28330686f5e10d52b4045bb1af725a0f307a33c78020187d5c06b75d1e738ec1dd1373fd19e1f241805f816595b70b46f01b2d50b7be10ba18f13914642fa47e224121a8a02928ff9971da1bd9722ed42b9bc1227ddba22a020da3a025f292bf16b3bd9a13ab86fdb7b52aa1aa02dfb6dd9a5ba7ff3d686275acb79676dfb8f40b48e04ec871fea7415815332e01ad8996c87ab1f0650262daf1706c78177468719c63073e6c14cd8db6c7d20c0c554b7da98670afa01641d6ac04f5490500d04ef29139d470ecd6e1138ad06bdf0202167c9613ff41288bbdfa619f0656d6318866118866118866198bfc6344cd3fe330cc3300cc3300cc3300cc33c440f8c31e7cdedaf86198a1835e67f4eceab8ba2a900ac76561f2ec7851a9aab094dc29ffef8c9986b4ad2b8367df1b47ab4845ce84126629071510afccbc7851e9ceb3c13b3695d0ae2393cb96fc06fb5b0aeebcf13e92290df08717bed266b12e052001ba0cb180f70d8a6a044d761eacbd0a0c09a04b82294d6edafe46c998296142270071198cd6b2e50351ca10c48016e4e3550e2c70cea2e9f420d6418080c4f5de8dc50add31ef614885b63be7d2ff4f207bda2e014d4968147a4654d6c7b4f00d640a3ec29026ac8ff2d7f06d0a52dc483f7c153dca16e8f7eb6c1f00402ca2d0d5bef006704ef1c381e73e809eec6851d5a83a497a0a486008d3fc1ef18af2632a00818ccf3ccdd9f6ee536c801bde8f12386c742aadd5093a1a01bc2360468846b0a6f66b835d1001796c847223599eb2076681da81fb0e095bc28ddb0749d4ad59b38236c8b02d7869404de38396ee536022abd18701b53379c55020afb26b346da618049736d1b4de4596a6d6afbd6219edafda11daa5a213bac0cf464d292ba3ce3afc6c54a004c2cab1ad8e16850aa17253401a27f354147dc908a6331912867b92a07f41266608da40eaec486263699eb20eccaed8e873d05d8149cdb6276c3b521730d81b27d129d82920cb47c607e5d66b683281b6a1d9aef1bf267d237300cc3300cf3fff01ba0dd7ff49b49ab310000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078305f7930f85287910000000049454e44ae426082;
+ICON BA 89504e470d0a1a0a0000000d4948445200000080000000800803000000f4e091f90000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c0000003f504c5445ffffffff0031ff2931ce2900ff0000ce2931ce0000ffffceff2900ce0031ffd69cff8431ffd6ffffad63ce529cffad31ff529cffadffffff9c000000ffffffdcf771880000001474524e530000000000000000000000000000000000000000416fe1a100000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000000c74944415478daedd86b0b83300c85e126b656dd7dfbffff75198cb1cf8b7036f73e08dec9315690960200003e67ea003e8823546fd595197cf458726de865f4da6c9a271bdd86d888ddeab13b98bf4ec591b7b3cf55b31647e382561301966407a27cee1dec32373fc6404b952f3d153f3a902b9f356bcb03c0362ce25f9a6e7b6d80c3515bbf9ccee200f20e74bb88135c47710000f8063731f5f303000000000000ff8c69ba15c8db277f83f251b4ce7cf32fcf78cbbf64f510f882af405b1e00000000b01577eab313f6ca24921b0000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078315f793040eee0f40000000049454e44ae426082;
+ICON CA 89504e470d0a1a0a0000000d4948445200000080000000800803000000f4e091f90000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c00000099504c5445ffffffffad63ff0031ffd6ffffd69cff0063ffffceff0000ff2931ce0000ff5231ce8463ff52ceceffffce299cffff9cff009cce2963ff8431ce84ceffadcece0031ff2900ffadffce0063ce5263ce529cff2963ffad31ce2931ce2900ff529cff299cff84ceff5200ceadffce5231ced6ffcead9cff5263ff8463ff849cffd663ff8400ce52ceceadceffad9cce5200ce009c000000ffffff992969250000003274524e5300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005c42803200000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000002da4944415478daed590b53e2400cde6eb7dba57296571f5e79c8c313c5f3e4ffffb94b52e0002de30db66124df38b0db32cd972fd924539512080402013f3cedffdb9880beecfeb5ba6042d7d2602bba69bfbb67f58f0608dcd257dc31ddf704820614884bb57b7d150d489024cd94c921262d77e780449804f52a106c7df57e96518f731517b41ae6be75e58d1a098c5ccb6d8c675b5bc08aae381f03536f2e960a44a91eebb4af8613ba08227813d44519a01776eb241053eee5c445ef14b8a715f030f526c04e8129ad67730c83d13e58a68068df2eb26d9ed6a5003dfd81d65ea1e2244d7c6215b7dcaf004fc128a8b51a980493502010088e60a3acf21e54ae7a4b2361564da0feee800a2c4e10e8fec7833e8d145bbee7c2515b99c72850b365e206d81f53e893c3005783083bd6b01d7748041bbaa728c3606c76670a83fd6f04fdcff9b19ec324325136c97012798607af5e54f41b7f82c9810353173ba77a6de186c6a7e8abe6269be354a0d41f08c16a4ae3107a365b4ecacc343421947f7801060765de6886b4fa6ceb314c459b210c4f41af8f5311baaabc04730206d7217028d44684520ebc605c9aa4f9b97313ba6e13653af868b0da1ba0631865abc1088a611f7d72f8be546051e6c097cc4db1f6d1dcaa2005d46c02a349665da69e7312618911eebdde92c3681692c28419e54d4184cf2b0e1ac6201be9f1349a93cbee4687a0ba19ebc2473690e67d8c845f3a8c210ff55df4a0867afcf406bb54e7678bf009998ac3fd8972550f962f07db5305bb16ffc3230128550502c177c19a19dcfe0b0482cb06779d58ef3e18ed7332100242809d00fb31e42f4482eb0577e25d827d4e0ed76e7fcbe19aed0bf8c0dd7ab9cfdf7aef939140d346f7a2ce41e020ea0c040ea3ce46e0633a0c04188ee1b1b5260ad1c1cb51f6aec75e7ad88b6f55d4d943230c8481e09250f58ea8a9225af996ac2102d54d4b0834f43fcfcb52e08359e6fb2bc07e0cf90b9140201008048266f01732a850d7b81dbc000000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078325f7930525b4f1a0000000049454e44ae426082;
+ICON DA 89504e470d0a1a0a0000000d4948445200000080000000800803000000f4e091f90000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c00000081504c5445ffffffff2900ce0031ff0063ffad63ff0031ffd6ffffd69cffffceff5231ce8463ff52ceceffffffff9cce0063ff009cce2963ce0000ff2963ff0000ff2931ff5263ff8431ce84ceffadceffad9cff84cece5263ce52cece529cce5231ff529cffad31ce2931ffadffceadffff5200ce2900ffd663ce84ffcead9c000000ffffff00e5c41a0000002a74524e530000000000000000000000000000000000000000000000000000000000000000000000000000000000007f429c7400000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000002514944415478daed99897282301040034212da468b496b6febd1c3ffffc16e401cb18089129771f64d2b0a65f7b139849431822008029b281ef5142949797d872823cbc3fdad88b354647673db7c20bd730ca1c6e708a889b86f16181daf4092e6532eb50103a96d9b8807e36bf33863d9139c6f9ef3742674fcc204844872f36aaaa88dc4d11b1409fef29d89297c8e78f136766db7fdeb841399fc9843ba3953318778b6fd3fc75c9af260ebc98ba5dd58635b46f011c657a0489e2ea102f09bad185b738857ec35bc8cda1152a65f70ae820a2878178db97777905914476934b389e1839558420592b9ad0d5c4f6ef47df7357d8f9998ec46827deb45799e48cb6aae8b2aa8495101b89863e34b41759ea74c2c4a7935622d1dba1de882c5e64766bc68020804996da3c0fcb08dda885ee825fb8e235bf335743d99dbfeef3b25540d9c4cd97ab56d8295edd42a37bf10ab8c4a100441100441100441108d6c90c1be7e82202e830650f3ef5e10f3631a780984989d7d0436bb171c814d6d4302fd1ab87781fe05dc27a25002cea00b8419867e0657759b88fa0d3890fc980e7ef9fbef78d8f92b07f7fc616a8099df1decfc95c3f5e4477e0618c4fc3384a71012b828b5e5ae8154007b18204f04c813113118d03b02ba00be01f63db18701ba00be01ba00fa5d715081ffdfcf4d4b20010df4c1225df30a4c4881da1d02c202d0bec0d1f41d4b54272f5ee9eac7818e45bad39f603d043a962937ad475c04b6cd70bec0a915c017606ef7a901054ea840fdbffb9719bd613aa1b741dfc3d0cf20c044440c00f4b6230112208181f3072c7c3d3aa532de0a0000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078335f7930eae7287f0000000049454e44ae426082;
+ICON EA 89504e470d0a1a0a0000000d4948445200000080000000800803000000f4e091f90000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c00000093504c5445ffffff00adff00adce0084ff0084ceffad63ff0031ffd6ffffd69cff0063ffffceff0000ffadffff5231ce8463ff52cece2963ceffffff8431ceadffffff9cff009cce84ceffadcece0000ff2931ce5263ce2931ffd663ce0031ff5200ce529cffad31ce0063ff84ceced6ffff2963ff2900ff529cce52ceff8400ff84ffcead9cff299cce5231ffad9cff8463000000ffffff485028020000003074524e530000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005b379bbe00000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000002ce4944415478daed5a8b769a401005449ed218b3b16c531269b1e92be5ffffaebb2c5a50730efbeaf5b1738e187639ce70e7de99c1e879ccfcc0f7a0060f2098050e811b4760860e20f0436c00f01438129ee0c03c8ad93149bb934c9ce48bddc2c0c49ea61dab202b3edc719fcbdec93d3bae1ef60ba300eef503384e0179ec5c911e81747797e41881d40002c7245cadbde223bbe147968c927ea2cc51fe94f285cf15cbc4f39a5f73f76faf4a55fcbe8f00bfadf94b8738cff1a68eb362c15748f9852f7220b2e2eb6e8f8aabd52df40f10e01f97451de7ba3f699cd41ddf9226ee88f83cda5bea72d10f6663008a6db58db66b8f2cbdcd37765ec784e6b46c62520b22ce5fbdcd83d84bbd8496345fea04101c2020c496449c030304f85a2376590e0a817b569dd0a63402e19803ab75f7f6fd07bb619e899e03cc2b4780c1c22ef9f94b646993c6d9efc50979c8a56014c02e9ff39a7f2c29e95bc4164b5a0b59f0575fa848fef456098568558350be1b92c640fd790f8129f6e7d5a07ff96e48cac6a4ffb3ec86ffd7ce6026444f44e1ad23303b6846b78780e3c019d401f76c8856011a018589e8ca10701c80d78133a884f05ee0e60120075a664c862dca04027015b84a88ae84f0a9189f829b2761082fc56804e02a8077c3cb9d07f6ed4cd35449d8ee0f9aa6f864d48ede0008980b409103e6025054c1152100e780eaf703c664a8dc8c4c1522d70be008c00712591518219e0602c6fd4b72a0351f83940a2cf89742c0867f3c07e45460de3fbe0ec02be185f40243adf7944de28015fdf5364505ede00841c01afcdca670c06a005354804060f86daedd00a673c05218937a814d194eeb05160b91eb057004e4e6010b4c907c2e301f81ec44643c02690e988e405e058623b8301558309ddf90683629fdff9c1a094087034602d0e90578048663936a00700e0055e0a1111006548130a00af411306217dd0bae03013807dc73019c034e05480efc056b133ec85fcac3650000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078345f7930773010c60000000049454e44ae426082;
+ICON FA 89504e470d0a1a0a0000000d4948445200000080000000800803000000f4e091f90000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c00000090504c5445ffffff00adce00849c00ad9c0084ceffd69cff0000ff2931ce0000ff52ceffadffffad63ff0031ffd6ffff0063ce299cff5200ce52ceff8431ceadffffffceff5231ce8463ce2963ff2900ffff9cce0063ff009cce009cce2931ce0031ffadcece84ceff529cce529cff2963ffd663ce2900ffad31ce5231ced6ffff8400ff84ffff84ceceffff000000ced6ceffffffb5f8125b0000002f74524e530000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e65fd39900000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000003ce4944415478daed5bdb629b300cb503842c906c6b9c05d29576c9ba3bfbffcf9b048435061b1b1bf490e821dc6c712c1dcbb268197313ceb9a30657000b6a00d41608f8821640486d011e50030889012c78406c011ed20208c939e0c102d1325ebd6bced6b69d830e07927483aab68a9775ef27efe1e7c3473c7dd8a97b2aa41307c4fe138e263a280074ee8b0c471dc59be63a3f5a01e081e482fcb17a47ae1847f77ef2b985b27cda3291c605faa248d118c92a7dc60785d22c9d38f0f0c2f6d0277aacb4e0e8e080c3ab0f785f02f0a5b5dd9a2527169de114dc181d595e3cb3af4726a01f3ce8179903625b370633886283f66c943587ae0b5ad5f0145a55076c051da2b41a4973d50f40e600aa13e91aa9d40cadeede1e3ab66cefe4f16b9a1d376801ec0a06c96b2c51bc7c5a1e1400f8f56a28f65991a5d90bcb0fecdba935b1d8ef1a9d7d24dc55fe5f37482ae7a1318afa745b5d2925b8e640ad044c077d2f16f86fd946a7ec0370b1d89f98f8be468ee6f10ff03ad0e15c590d4682e450915a5e0d8182283f7f41075140bf7483ca2a26b53a3b088a78f59bd5b3e00f6319b48c5e53b0390e07118b4c3d0bae3970a14a7244f7e5e92ac6c8921567b444abd3ab70ea8c28a0ce07c833a2903a1fe0d419d1823e2ba67601f52c08a83940bf33a28e84f4b3e0e6eb03770e905be01e09e92321f56a1852bb803e29a5b6c0e2e69352f2329dfb5a50ba09ec8cdc1438bb807c1adefcde907c35f4cf016109c03b072c01f8cf072256c706c3e6febf9a0180eae58608fc7320bfbcda0cc11471c00ac01439a1158029be9cdab96082b5c00ec00491d08e03532c4656d37092c5c8261091e703d4ab6148bd35232fd1dc2b24d394e94ae3303011072c0028fe84c371bf61658150a5622e0b70a58e792c10066a25b3005093d0018105005d46341e8105006d4ee8bcf73610f23aa19a846f0ce15e86504b301c094b36a533862ba5e59b5f63b1d91b0e7160cce02d8c36bc332a2d9f0a3ba30d93703400331926a1a44daacf95065db4329c94eaede90cc02021d132ca1980c9ee5837a734005ceb036633f9af12967189a67f1638865f9b40c47bfbcfb212a2f4956a4b8be5dc59baa5da72dac54716392b2e6d8a0b3d526a2f7be4ba42528e5afa742f1c54251528fc8edf44995ca090f96f05664c58ec7e37f4fcfe211de4259ae18c6862d16744461e300cbb8a66da8cc84cb15943553383b4dc148541839e667395e99408751991cf0541036061ddc72b80b9ea846a0b186c4e5df45f37e869e6fed1ca711a7af878ed16883cc581f1425e2ba6af96dffcdf9486d41cb8cf02fa7f78a4fe7049ce81fb2c70ae96ff0331df50a6f0cf39170000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078355f7930cf8c77a30000000049454e44ae426082;
+ICON GA 89504e470d0a1a0a0000000d4948445200000080000000800803000000f4e091f90000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c0000006f504c5445ffffffffad63ff0031ffd6ffffd69cff0063ffffceff5231ce8463ff52ceffff9cff009cce2963ff8431ce84ceffadceff2931ffad9cce0000ff0000ce0031ff84cece0063ce529cce5231ff529cff2963ffd663ffadffceadffff5200ff2900ce2931ff299cce84ff000000ffffff989fa6a40000002474524e530000000000000000000000000000000000000000000000000000000000000000000000000601510c00000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f288720000017d4944415478daed98dd72823010461708d046aad6505a2d88adefff8e5d02f6efae44fa81f39d1118e1624f76378189082184906511c5c9cf1b26fdd7f8597e770f4d805d99022af0b0967ca389d83eeee2b571e593984aab10ede2eeae2ba7ae479626123debf565afe1f662cbc41cf4bc91d74aadfa8753e283c7b5c6d2236f448e8936a189b51757d21527fbdda3574e40de966ddcaebbc0faa793a835acada48b6eb6eee48a4905fa29a703ce4eb54af82c581dfa9b7fa4dd3035da82fef29ee5892f8166c0a63e03b6f029b19376e1a5c0d1418ecd5082a61b7aea7b40b276f2594008218410420821e4363923410f9e1042c8389c73d8f8c3818c0f35c0a69f02f311404f03f042005e88c86c8037025c006f0017c01bc005f00670817910fe7ebe6c95f4fb257fde35e9df8d01029fc1c70a5ce70be1bc6481e1172e306ee7ecbb40c0f65b50068632046760c10212f29d1a3e0dbfce230dc2162202055d2f747cb8003a3e5c001d1f2e808e0f1740c7278410420821e486f8009a3a266163e097b10000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078365f7930dd39d84d0000000049454e44ae426082;
+ICON HA 89504e470d0a1a0a0000000d494844520000003e000000800804000000f90812ca0000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c00000002624b474400ff878fccbf0000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000000534944415468deedcd31010000080320b57f67bd4db0070ad05b3913bce572b95c2e97cbe572b95c2e97cbe572b95c2e97cbe572b95c2e97cbe572b95c2e97cbe572b95c2e97cbe572b95c2e97cbe572b95cfe1cc47401ffe967ab3d0000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078375f79306585bf280000000049454e44ae426082;
+ICON AB 89504e470d0a1a0a0000000d4948445200000080000000800803000000f4e091f90000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c00000078504c5445ffffff000000ffffce9c29000052cece520000299c9c5200000063ceffff00529c6300319cd6ff9cffffffd69c310063ffd663ced69c31000063849cce84310000313184ce630000ffff9c31adce63adff638463310031ffad639cad9ccead3131849c63006363d6ff312963632900ce8400ffff63ffffff6eadafb70000002774524e5300000000000000000000000000000000000000000000000000000000000000000000000000000022fc7cf300000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000001a94944415478daed99eb6ec2300c4693945e52e8651d8c928d75f7f77fc4d94e084cfc4e98b6efa8ad48918863bb804e9402000000000000000080be2db75e3e0000809f9882be9c57e771a9ab5aebc6660ba0a4c94dddc678d61b3a722660ddd1b51f4e2b1e87ee3cc812401116cfd3f6c3dd24bf97f783ddee36aa9f1e94d927ae074d202dd00f1d9f14071d330da836e58102746a5b254e09c5b0a2dc5b3e2500a982291e2b2b89c9d014fd53e74b1066a74e50eaa81dbdc335d9250ce0d8701352a2cf25f079a0753fd3754edd91d48434c3b6b5f3dea9a5f1b37318a638a8a5b2dc03891f8b9272cc5db668fdf26a631fd674cfec5b6e909415c8c33ce15f31000000000000e0d781fd020000f84d8889bc1061fde4c49c6513f65e021e6304e5db49a1670b405469edaeee65cd8029dcfcfed15891f35c957cc27ef425683a2e3e8bd9a50aca5c7d4661bf2414f6a1093b36e6927bb3decc41576711f6d1448b2ef7725ef66d7209fbd87061c320bc1ca3b04fbd85143f5fa6ac9ddfb5e01e38097bb997eeb1182f4b10e4bc77f675cbc27ef51784fd17743d000000000000005cf1dff70bbe01839b194c144165220000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078305f79318f55b7070000000049454e44ae426082;
+ICON BB 89504e470d0a1a0a0000000d4948445200000080000000800803000000f4e091f90000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c0000006c504c5445ffffff000000ffad630000319cd6ffffffce9c29006384630052ceffff9c310063ced69cceffffce84319c520031adce63003100299c63000063adff00529ccead31ffd69c310031ce520031adff9cffff00006363526363d6ffceff9c310000ffd66300526331849cffffffdee1edb20000002374524e530000000000000000000000000000000000000000000000000000000000000000000000b88e636300000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000001624944415478daed995153833010849394438294428114d15af5ffff482fa19d4ea7333e18cd89ecf742fa4236c91dbb14a5000000000000000080d5a385915e3f0000ac19b3c944e7a7fca1101560cbc7b29214b02d54bd139c9f9a4c99b6522425c04f6ef79d32521b508734d2ab21e62e1169c68502b4872c6a072202d538b7e0f86423057c53033553b89ae7a84efc995cb9e4642b1eacc573bdf86bc582de6a6ebcdf95a1076d932e0f50fe72effdd41c930970e5ebbcea5b01e97660dbabd17bbf3b69dda937f601a3f53b0bb0fb2475e41fbc17fb6517e21af0a3619351de25d980103cbcf7b7e1c9cf1a4c5ff923b0f707f32b1b307b7fc127711130b441803f920402aededf9e7f4f7ec46de8d2c4d2faecfd3b7f0cee30711152a88123d5496ae0eafd7317f875f3e883bb80d27401000080afc1f702000000002c19f130219e67c43315feae17cfb5d225f007ba40767a000000000000fe0dabff5ef009a60e0df00ae355a30000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078315f793137e9d0620000000049454e44ae426082;
+ICON CB 89504e470d0a1a0a0000000d4948445200000080000000800803000000f4e091f90000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c0000009f504c5445ffffffffd66300000000529cffffce63000063adff0000639cffffffad639c2900ffd69c310063ceffffffff9c3100319cd6ff3129636329009c52006352630084ce31000000003163d6ffce84313184ce00299cce520031adce9c00006300310052cecead3163ffff9cad9c6300639cffce9c293163ad9c31299c63adce005263ffff6300296331ad9c63520031849cceffceffad3131adffceff9cffffffce10c03a0000003474524e5300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000411199ec00000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f288720000039f4944415478daed998952db3010866df9880f6c5c1c72e2262e949642296ddfffddbaff4a764248521385b84cf71b181c214bab5d29dac371044110085729e53d6bf1837077ef4174bc69151e628c983c93c04f760b909e65c711a01928e7d5e6e74567018ea48166a078d0ac286653a41f2e06513954ea92fa8cd478e24ce93755b3124a9a7a103c0f94bd211a0dc473230054118f8b74149206bc8cf601b7907c579e5356fc82ff7142824341d3b9ad25dc91de03eefa48fe224acf236d82ab2594942f0ac72f87d4098dd4427234ed47d2406b0252b8220d9c418089e3d49e3ba756c8122bfaecd44ba79ee13d74a49ed60244ade6f9e0a5b40ffd45c182b1062abdd24fd47a8d46ffe6f36de1b8ac04cbc9d735407b8c264ee61954518e23ad018f9619fa7a0ff849e5d430d4d597af19de33c6b014c06d47d0bb9f6655aa4a42177b0da7a0d2a7a0704a6c80c043c7506bce0fec2dc01657072aad2f6acf7e0c0bd2d1a06705088220bc09aa67fa5ebf2008c23f83f1b77deb78cf922e01a71fdcbd9d987d6800f151c826a000eddb82a3ae5deebf0ed4384d1028af0cf1643e1d1e31043c3b920ef4548f27883bebedb90713aaa26f39439c8828d1a42bea83d3151ebf4801694c4f2638df6109f3af7bc88b74c5c46860cf2b1dd092d3185803f223bb730fb1ce927092844ca54d806c8155ba626e1617c50f7c0af604c0f7675a44bd662709733641661733630f9c635058783a2e6861bb720f7a0f44ab3d80dc4a3dc8f6bcd2017d0a9094a0a7ef4848ad720f65853c8dfe6bfaae4ec1c32309acd48f9b57a72b36873d907db9cc9300c5f74bdf1a104eca5fca07474be01f28c05bcf0e1ef754702c9397dbea0efadb9133b84bae5f3c2543a566cd572172cbe9c8d42f96b9be0c72f21092e682e6824647b97ebebcc873f611d84188c745be59bf884cfd226faec4c8854f80dba1b9a05fe3216cb9c8e3d5abb81edbfac56573f1fbe5d0734cfd226b7ff4558d0b9a7765570f61cb3532d54eca5afdc2c1d76eedb1435086266b8efac5b432f3190fe15e9bc0b2a0111b1f41d72f72aced021af8d56a60710da9fc9ba7dba22de2b087b0e6237565cb29f2b58fc0d61e172eaf6d8efa85d903a85ff0d6294dfd82ad5e412fec58528f577808eddd3f33bf55730a4cfd8235903cab5fc07b0c966dfd22737509031e420d0f21ebec2160460bf2e79a3ebd8730dd28389fd8437859bf100f41108483907a8120088220088220088220088220bc637e8f061b2d1feffa9649108477c97f5f2ff80357cf3e519f0c15c50000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078325f7931255c7f8c0000000049454e44ae426082;
+ICON DB 89504e470d0a1a0a0000000d4948445200000080000000800803000000f4e091f90000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c0000008a504c5445ffffff0000000000639cffffffad630000319cd6ffffd663310063ffff9c63003163d6ffffffce9c290063526300529cffd69cceffff9cff9c630000312963632900cead319c52003184ce63849c31000000526300299c63adffce84319c00003100310052cece520031adceceffce63520031ad9c63ad9c002963ffad316300639c293131299cffffff7d2c58560000002d74524e53000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e99ffc4b00000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000002b64944415478daed990d739b300c86edd8100c66e065812e0d69d374ebbefeffef9b2443c7964082c92edb55cf9d4bce0d2fb20cc47a2d04c3306f1e2917ea7a6a3a8a7fef5826a46ed2ec82b397b343b1f9bbe2f43fd2f882d3cbc4cd0ca04cde9fd6306702d05246995dc11f61563827e58775483aaa42d47730def5c78d2c4a68109242f5fbb4533e42c2b7303ebd7598019b3762b775cb4d139000d22940e4a1707605828f31689a5523aa286e954f9e68578d4fa0a2063a706a40003008d2c26bd99a1ae8516f1a1baf7cfa4cc8be6ce08e7502f206d3a1ca2460026c2e91bd0fc03793b86a4b37a1571e1e975ed014b43762d0fde84f32903c3f7a2130030e3380491d91c484eb85c203060e5f0d0aa0ded3e1e960d770f12e030aef815da4bcf2716225265f53726c0d1ff15988bbf7c7244caada5c3e63063e51c369351bf91926df2b330cc330cc11f2c6dc7afc0cc330ff389755f517d1563a638a278aa17355fd74cc680047c5d0153330aaa8b1a435543841f9b470afbdf7506cf57a26a0db2af96503cad028bf438a58d1eb28eeec89ca9b08966c85acd73365a05ed2e6dbd6a850506c8e2ada54797bc2755922a7038b6a1538132069f3acf309b04cef14dd9f8a681df80cf44c848a7c0d75ce5618802433d1774adca022d9023eb2de93a0bf8873b6c2c8f5bd642f032651838a7aa1c453a4cac78cc26d9f064bb642dceb9980978cc9a878754a0615d1da39e40d1c9abe89504eb115ea033a23fed89784314110d08c9f60362a18e642828cda6bb29cbd71f0df66a0c60d97dd1e5f5b03db0b7f19f4f4e15d8d3fdef01bf275f23a6036bfbcf2f075c03caabdd81d2886b075c0fc147c7bfe1ee34d387f072d90fae507ad4bc2d60181d7bcf38dd0b028f04bc31bfd6a9b5bbf8376c57c8d19949b80228461186626bc5fc0300cc3300cc3300cc3300cc3300cc330cc9bdf2ff809b2da30a5a6ff30700000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078335f79319de018e90000000049454e44ae426082;
+ICON EB 89504e470d0a1a0a0000000d4948445200000080000000800803000000f4e091f90000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c00000093504c5445ffffff0084ff00adce00adff0084ceffd66331000000000000529cffffce63000063adff3100639cffffffad630000639c00009c2900ffd69cceffffffff9c3100319cd6ff6329009c52006352633184ce00003163d6ff9c84313152cece84310052ce00299c31adce630031ce5200cead316300639cffce9c293163ad9c31299c312963635200ceffce00849c00ad9cffffffa6ba06b90000003074524e530000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005b379bbe00000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000003764944415478daed5b6d73da300c36498809210492405961cb0bd0b55b0bffffdf4d9243811d4ef1e29d3e60dde592a6a92d3f7a64d9b22a04c8c01b0856f17c8f5701dff3791508fce0c11160e780f3021d0786a194a3ab37d138d6b6329c2486fd0ea594f4a0f182690a2dceae3488e67a05b2496ed63fb5df814041a32d16cb4b05665d0a9821509cd1f406b738304d4f239a4a344536794a93d537299fa1b350ae3700fa77297f88158254564340a018cbf5bd6a9cdbd72030adf3b3aad3f5320b6330c128071ed09b34cfc2866ed07334db000268a1b2bed312d3f387de4d0e0c2f5b8ab649b64814077615a21d6d371998a7ed166ea0877abfbca3f7ebf607b711f8840800978000b63edf08b11f0d6be263016f70f8fb4aec9ff1093f842f8d4d707b1e502401c071a0302e623921d0b423c537f4f8f2f375896e68e4081724f4839bf340096389e6758eaaaed689426004c38ca39603a400f4b97bfb454fad31eed480daef40e0c47ee855ca661e23cb23f482467901d95fe05bf830566e188defb640db7ecb819eb1c0780efa4b7ac782fda8dfdff75c0f6461da0f00b722d2c4828742809b03037e04b839103c3202100fa43ff024972813b093d04d440e818747803f163cbc09ccd7037dd7e1bd1130cd057ca5807138b68c804938c6ed54a53664f6c4606b46db52b551654200a468b7eaf6c48484e764854531d89ab5c98a820d01ccededac23d03511ad1accc9a8bbf84c565846803f18b98d093b02dc0716013f02dc1c78f825994bd3b1cf03eee0d2c502170bf8e701170b5c2c701ce09f071867423a2ff07cdef302b73774eb017604d82722f6b3637e045c30d27160273b2bd3ac256c750844dbee74a4b574a54e81af3ab08680c60498978edba2addfefe9c7fc2d94550197d855f0eb72642d5faa47206fcbd60a2a66ace1c73acf1694ab8e56b13513e862012840156cdb2526c9c57b4c058d70a9aab9dc9a0974f9011821d65d4277aa942fc661d3b5af44d9d823a10e01183e81bda54a45aca66c1110d1cbc7ebf2ffbb21d68b120792130202468fa6102b2c61342f65d688de04795bba48a76408ff9342e054c298d339c2e94cc1ba093ac4ee89c53fc482b26709e3b5186f4efb9730f646c0aeb02f4a5da2929d032e45c3ce01e705ec1c705ec0ce017e2ff098113804476e0498bd2038322be005cc1c38722b10780766058ecc08b07a01e6ecbd03f3ff17048c33e11f35423c4fe4fedf650000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078345f7931003720500000000049454e44ae426082;
+ICON FB 89504e470d0a1a0a0000000d4948445200000080000000800803000000f4e091f90000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c000000a8504c5445ffffff0084ce00adce00ad9c00849c00529cffffce63000063adffffd6630000639cffff310063ffff9c63d6ff9c00009c2900ffd69cceffff6300319cd6ff310031ffad630000003129639c52006352630052ce3100009c8431ce5200005263000031ce84313152ce31adce00299ccead313184ce6300639cffce9c2931ceffce63ffff9cad9c63ad9c31299c31ad9cffff63cead63632900ce840063846300846300ad63ffffff0ff02bf80000003774524e5300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000958ae13600000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000004a74944415478daed5a897ada300c4e1c62086928048a9b865118d0ee5e77b0f77fb459b20da438a9a9c7d475d1f701890f59fc927cc80a023f0a19f3e4e0492c8c680588a81108598756001651db000b6905e850db80bf17c49537deedd5b64cfae971a1c50b928b74f76d28eb0eead85e5624e0c37a014617f971611885f676d5d67c3ca9639b5d1d56f1cb26012c08b0630454bb6aebac5e00a0a910220e46d7dd7e5adc0851caee33210612c637f0560048f318fe53d6155545b0e379c02090ce553f607f3b1e207bc97731089692f768f6b630e06752f1d3c56434eb4915c4b9b4032ce9e7a3d90a7f24477e39902c4143cb757000aec50b1229bc24e89702a460579bc52493ec355f90aa58a1a4fc4049a00cb48179895da5d0b2440f2b7f647b28cfc6c1019c162fd821a0fb4dd739b057ccf031e0c50d1442bdea22659608c0a84369ad9b3859a33d66b204fa6cca6073074fd0502c2a0244b53660fa6dd6680350308dd5b0522be015500f8e07b271d5224004560a012cc1c7fb77ef27e058c78e10b2062fe0f71f643f8d80f9377cfc517e3e4123e01b0cd73968a558a40a8158fe4d549b563eb29b7ffe824f0ad4e0c00c9be701ec078a5f2e26ca86912f1fae242e8a2f4c447c28c46ad84b403cf082152a6581fa0fa05422d653d0f22e94bb7981e9176433f1758c1ad67c0bc0a41b9b7a07b2ce41755ee0d4cfad7e479bb8ae8675d8b3fab9d51b3967fd5a415903024dfd5cea9d887c4744be2764d40884e47bc2905800721b68bd8045bee702e147d208fd18f82340ad026a372447803c421251cf03ad0db436c0a811084f5b0b9cf7e1e742c01a63f0a2e8b418912302e660f646883b881b89e79d0bac3c5d04e095f0041c48f1246925d71d91e69938a940871132159e3041053bb9ee8812cdd30981a98a5ee079da0425ea04708d94ee78ba20f080d262bc00c3324d42bb9e0b32c3d3dd06d244c54778d16bf01ed748a9e659c368beda7f80f6168baaebd66ba0de06ec3c93334c44e4d172e22b1b72049a43347f050162015a1b78057746be02506fcb5b1b208f1346e467436a1574a855f0021020b7016a15b4fb01eaa998516f48e8bdc03b5aee2b00fd5ae06b03bef7051deafb027223a49e09db502db90dd0df1d532f4627866acf81406b03161b380e47f2e6743e0f8a6c8bd17138323b9b00e11f4240c53197101f9ddde93747042c36905c7c13a217cc4bf9bc2c5542633abafe0e570007e360bd1650271afe2821b46ade5cc81a21c96625048631405d6076e446e74b56c6c9f6098d8949341cfe5ce741f30dc123016c088caed27dee5d8e498470fd90ee131a719c7d42a38ae6173d9ddeb67b7320ebad99c94334098db94a684c1f8da3121a156628d940271a9ab767db804903cc74426360b2231f2ae360c263c50674a261768a0dd896e3c424421690d0c831a1314d301db19ad028eb8dcc2ad110b4d52d8d17142bf531217fab0aec08281568a4473aa1317f3c8e7b4263830a1a17a3a7eea8dceeb09e5041d35ab02c9b7b2fdd121a9ba8e9eed821a1d1ff22977c3926df94926fcbc9a3e5af209bce93e86d80da0b5e40b49cd80bc86da09d09db9990b12dad00e1961a01ea89684bed86e433e12d3902bffef7fb828ef73ce07b5fb0fdd7ef0b7e03df2f7af0f21d3f7d0000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078355f7931b88b47350000000049454e44ae426082;
+ICON GB 89504e470d0a1a0a0000000d4948445200000080000000800803000000f4e091f90000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c0000007b504c5445ffffffffd6633100639cffffffad630000009cd6ffffd69cceffffffffce9c000063526300529c9cff9cce5200ffff9c630000000063cead319c52003184ce63849c3100009c84313152ce63d6ff9c290063adffce843100299c63003131003131adce0000310052ce632900ceffce63520063ad9cffff63ffffffd6431e710000002874524e5300000000000000000000000000000000000000000000000000000000000000000000000000000000f694b05700000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000002214944415478daed9adb76da30104565cbb224ea621ca8534c20406effff879d91ec107243e3a4b9b467afa5e507e4f1cc487ad039280500002acbb5687e61cab705788ccd9d64ba9ffca8deb703565680cd7fca323ec1b4e20ed433d324a67156a9f9821a31fbd59acad2e00a6c7e6ecc6f2589333059d2fbbe5ba98b75525df5a65445e568252ae7676b672f4baa206bb7aa68b49f24c7b987b377bc0a1c398182e2fbd94a71ce7e1e0677e0b254b238f72cc28bad316697f2a29f18661f1388a3e62f3b599c03259fa2f4831067d65470ac5ed1338ba55b499c0321732e25ed30ccf7e131ddfa2bfaf8d001dd77203dce71519a5635ad73f526462f9a6beec04d18fde2678238000000c003cc67f2d9c50300c03fc8989b11780b457f4fbe6dcdbea6116fe8e7c66c59c030cddf5e0f96098a5de9bb752f5568be6807a9225c53cf8452c5b82436da77cb4129e00e04a9225c97bd50aa90c37ac46ea98eb592f15285fcfb542c55f9a00375eeb22055b80f399045a3d594f6c055d04978d841acd1dc12b954718af996b591f8247c47fbbd5b850e5012347aad24e30d00a90200000000000000be0df00b0000e09b0383e01db8d80b26bf6610d8769c34ca226f2a4f0d027b3008f8b731168574171d1b04d96010b8d106c14232f9658340877f5a4ada3920c9f9598320fe97d1dd850e2ce5094856e05983200bfabc1ebd075494ff072be0555e3408c288a7600874321800000000000000802fc37fef17fc013bc22d79f6d30f210000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078365f7931aa3ee8db0000000049454e44ae426082;
+ICON HB 89504e470d0a1a0a0000000d494844520000003e000000800804000000f90812ca0000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c00000002624b474400ff878fccbf0000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000000534944415468deedcd31010000080320b57f67bd4db0070ad05b3913bce572b95c2e97cbe572b95c2e97cbe572b95c2e97cbe572b95c2e97cbe572b95c2e97cbe572b95c2e97cbe572b95c2e97cbe572b95cfe1cc47401ffe967ab3d0000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078375f793112828fbe0000000049454e44ae426082;
+ICON AC 89504e470d0a1a0a0000000d4948445200000080000000800803000000f4e091f90000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c000000b1504c5445ffffffffffce9c29000052cecead31ffd69c3100319cd6ffffad63000063ceffff63adff9cffff310063ce520031adcece84313100000000003184ce9cad9c6300000000319cad6300299c9c5200ffff9c630031ffd6ce00529cceffceff8431ffd6633152319cd6ceffff6363d6ff0084ceffd6ff9cffce63adce63526331ad9c9c8463cead639c293131adffffad319c529c31526363ad9c9c296300009c00296363293163849c6384639c849cffffffec88272e0000003a74524e530000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000095afe83600000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000005524944415478daed5a8d979b360cb72104021c09cec10e5a367acbd6eeb3ebedfbffffc726c912387785bb84ace9ebf3efbd0490fc214b3258b295f2f0f0f0f86ca08390aeab5028d13a7e71ed64932e9660456de8203b4f807cb100b6bfe8263d267c3a0da8620b7f3bb040541a63f620400e0a3106da8ed6b740cb143d874a099da02b537f050f2eed2c2477d04893a9b6cac820a001728cd55d1a95c003926e42e82f5378453a566bab3dd036b94b3b0ffa554c16789d5afdb7eb98340b3db6654624b18ad087fbdd267569e7da60cf73200113d4d8dbca10f6680d3489f81ad3b7748f836e6f529776ae0dbaaf710ee8aa8e79b83bd6288d3c628da0a7389aa6fbe826ff6689f6c506b73807d0175452e7d0615fc74702b462827a9c202414fcb9b473d1bc09a9f51c26029940075d8abdb52c003aa5fd593a895d85e088e0840eed6c1b1872a1023ce0beca70d838b5ac41ac1a74634ca794d009ad330d9fedffdbd21c61b1d23c3cbe2c3cfefeee6666d5ebf8a4cff55902cc7d582edf39a23f6eb55f4faf72fe1f01daf5411623ca2e4b427abd75ea7845d2116f2b6f4a97bd0cf8b5e1c5888c5207dfd1cbbfb72b929c3e04500679f46db06c5eb02c5d17c207ff7bbb18395885c4f653d76fd27145922be1d1fae098bd5c03b21891c7a44bc78e9d05016be031fb1226a887f94502dca5e35acc591245ac8163f60504a021e1824004406540afd283748243c6e2ccee2f25408e2de2624404d04d473f118096c541472b677a74d8ed6201701cb818796bdf40d6e16c203018590283c674d4a1b02fa2010f0f0f8febc05c17d71ebe87878787878787c7678c1e734527257d20606e67f26aed699b390546e851d9bdbc86aeccbb6a5a645d9d349c1d6708cafdcbeb44a5dddb9a66bfbcadb6b2fb3f3a38611f107a88160a90744361defb5ad5715bbd0b0c3376c6260981022aeaf94a498bbd68c03ed8c29b149e32a9253c6991738c63f7e6871fab3ddfeea547b06b9d274edaacfe89b268c5e667bee6fa97987b877f7e90e26a9571aaa9159eb488bbd4497da48142141e95bfda9bf754d149be145099da178bc335e1bd45a2f4f6c1160e95fe2db5b5e24878dbc8b648f9b047166878eb5eb30fa86643dd89fd76e69050535864cbd77dcf5bb8a481c4d93d4c60a49878a55aedc0e3169feef236597bc3c9d661166c95230066296d5334ad23be72f29235e0b8ad0e3a5000d78a061eb738bfe1ceef81d016e7e9052e893f22177769cb57ddc05892ad9d053ac00776a11ee7bead958fbcd6b688fb8d2a9a9e119cb1c54dc1dbd2266fe1de7c28cd43f906dc3705d1ec155f3226442654c9e94154f07b6eb91fca91272de658e3eed9a9f91188479cf46ab924ae2d40c45b13d125b6283c3c3c3c3c3c3c3c3ca610500cf3c7f293b2f34983667acb06c396c4fcb9fc8c6435933428f6aa98aab8c3057b7189c3c2d38be7d99cc97b3ae27b81e3d24a4d662d6697f57852754741ae8de993fa1e627a4d71bdc4fb0f150848111444ec18233bc90189f0258454475901c91fcc1c15c333ba14bdeabf30a6ff1b43a9c4c6f5439680cf1373e08703b2859d716166c812b464055e0d4528469cd6001f674a9c987ec8140c590232239e6de180d7490e0c6a66134856602c326b02f0017bdeff38a6a7df6acc120cc77d8975789a731813475cbb1fb302cffa00899eb831fd41e27ac912881493217f5f1eb89ffe49116424933e80e556e856cd10d373a660c812607ea4a1a3f7b1aeb6589a0b7fd4049215188b206535d17f60d8a7c16b24f87f8060149df15ee27d3a5c57595f2e90b649c7e4809d05923418f30c63fe00bd219c74c25370f5f343d1fa12efabf3919c9ad5f6f0f0f0f0f84271fbcf9505f8d71f4bf33813ff0144ff755c9d04b53e0000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078305f7932165ce6bd0000000049454e44ae426082;
+ICON BC 89504e470d0a1a0a0000000d4948445200000080000000800803000000f4e091f90000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c00000093504c5445ffffff000000ffd66331000063adffffad63000063ceffffce5200ffff9c6300009cffff9c52003184ce00299cffffceffd69c3129639c29009c84ce63adce00529cce84310000319cd6ffceff9c9c293131adce002963ceffce310031cead3163d6ff6384ce0052ce3152639cad9cffad9c9c000063ad9c00009c31299cce849c6352639cadff6384ff3152319cffceffffff5d49f2ce0000003074524e530000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005b379bbe00000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000003714944415478daed980b73da300cc7e33c20360467ac3c3ad64259d776efefffed26594aec4042d3d235ed4ebf3b8e3a926545b6b9ea1f458220088220bc63d4e009a88153508ec113383705f5020c5c81a196e704865bfe2ddc8261971704411004411084ff869768cdde635b270882200882f0968993341b8d4f38e44aa55d366dd2275b0ec8207c369a743b4c8b289f752568bb96b146f54c202a93547fe83677bf899d9f5a02c2f64c4027a9fdf89c40d63c33013b57aae0bf73fc4f39e58d808f361773b5087c96605fad7108db105a17506435ba84240e8c0c1cad60253f335adb4feb3a3ddcdcdc6d163e29930ba356936c15fa681768039fcf5795156a0f5fe0803b6de7051867976c0c0b5b47b1f5ccc2bdace2c4caeb09ad502590e2a0bc5e873ef0c4dd12f8a364eb621cf92971d3186c41dc8c8233d137f6477a89a79f72c495354781a9de079f6cd1cf9a4293754b569eb26c1a837959330ace44dfe0d2bb8a95471568fc30b80ae02ec175281bd62ad9a6d1cfdb0551629e09be37760a8965059d6370a12dd066136d958b82bbe77de80c801fbc37bfb335709cca1b5ef1c018247e10453bdf688c2742edf9a418c5d700efc397048ffc6d0207a6f6c1d3b0a7838edede3a1be34385a386f13671ef8dc3751dc5cf9cf7fc713887afbb5758a41b6d16e70711044110044110fe297d7bd6d34c5b3583f8b8213d6eae67a7b488bee4ad9a41769cd5633281bd7b5641ba34839696fc1199c0f6d551fa45ed950036fc0b9603eeb1c54775264ea07dc746d159dd17ab364e0aa0af874a03f09ac143200b4c5d8fa5937b339a7861008f0507a5b01134d0d4db572d356d1eac9e8f26255bbf8da3efe36a8fb0afbf2b4281a0453360a9e1072c01cd9f9717b0e1a5a06ee4daf71ca65002bbaa40ee9b3a4bb256dd0d77d8aecfd5b506d0a2195452830b42f2c2c66f41ae58b9c8f750861d5740d7152037e8f1a141462b98586c612920140878daa166c052838b14c80bda6dc1ae924eb25504897311590ef01530aef327df8cae0fb7f80702816ed10c586aa00a34e485d805ad8e54048e5b6c9c8b4a0ea03cf72818a1053fe54f186de89aa014f02bd400f8358f3403185615088401182f2928251447c6e900a99303465773e5922d93df7050493a00eb7dd25010205a4303506d9a014b0da4363484813fbc2495e06917fbd588074ea04c546f65571004411004e1ddf317a45b395a1ba0cca30000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078315f7932aee081d80000000049454e44ae426082;
+ICON CC 89504e470d0a1a0a0000000d4948445200000080000000800803000000f4e091f90000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c000000c6504c5445ffffffffffce9c290000000063adffffd6ceced6ffffd69c3100319cd6ff31adce3184ff0052ce9cad9c310000ffd6633100639c8431000063ced69c9cd6cece8431ceffff3184ce9cffff9c520000529c00299ccead31630000ffad6363d6ffffff9c31adffce5200000031ceffce6300310084ce9cffce31296331299c9c84ce9cadce63adce63ad9c002963cead639c2931ce849c9c523163299c6352639cadff31526363849cce84639c000000009c9cff9c632931ceff9c9c529c6384ce9c2963ffffffc3ac99b50000004174524e530000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d421cf2800000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000004ed4944415478daed5a0b73a3460c5ebc5c09ae83afbe803136640feed9e6ae8febfbfdff7f55f5582de060ec74ae939b8ebe191240d2b7dad56e26923046a150283e35440b4b884f6a3cf9cc2457e92c09a810eeeb9db3440796f30ae729e6542eb05e7cfeb80ef42b80c158a1c9754611e1e7353c2c91e6589c6412b884549e7e6137cfae6e882edf1424de827a49969bc25bde7760b7959b155c15d0ed0b73d814f45cc73407b88ec534b5248b659a4946dea50710c3a4d0d2ab450b90c06bb69c5801da835bd38093f823c96e894916cf3b704ffcb418adf3d00cae2705bf77de121c72e86d32b1079ef3ef06fcc315e3a95d95cda6a4f78e19d763716a5a6b2b4fe155e8265a6c71bac007d3ead09f031fb32d4663c201346007aaa29fb94c79b002fb91189d8b6acb3a8938803f9aea05ec83a8ee52af9eef7ba24907fc266cc002d6384cd10d4200f7ebb1f8968deb78a0c237d1cb6b880ef9db74a84e96730e3c971bd8658b57612afc5c19c71bf1584c11e2951015ffdce26181b1615b500880a4c0e9b969078c8400f63845b59fca8ece1d1056f22862fcc1316653afc25eace970c216e96eea580e7027bbc428140a8542a15028140a85c23e321e7bfe0a8542a15028149f20d6593c2b94bec5c369c1d2d5f139c5249b695936d6c6d2b97918c8b27b5ddf236f263c98711284ee8d3c448bb3d3195bbe9d27bfc40197c5d197c181f3eb39a28dbe9a24b7768f0d949b85ad22b840e76e87fd8c75f6aede14d8dc900e4a1b5aca39dc54518ded47541813186f935b2bdb25581239aae17600e90eff2d8f16ef9f65b62b1bbcbad465307abbf91acc4b137d9306af5b18a7651a6cd074290ab0c7362048e1b5b749de16e65bde2ebb6089e4a882c1fb2e254a5e57ec21221ff6d5703c692b36be89697cffc9c912b630206ad2991810605f926c9649265dc481a51f035b82d187c2b7b860b46d220e80e7a8e9f89559efc399cba92b96f910dcfa1538e0db3181d8b8cc3732737432090e385ab8b84163af59fb09dce2459ad811a515e80f3db5119906df52b060056c3c20a0abb76978c70c2cc54f7378ff7dc10253701f39d89383bb15eb4518be66cbeb04c4bc9007303cc81ed80402c797b7497e80402d7982b04c6c297e025b4594259d0250b1f65d465797e614757c458adc2b241ef9b2025ffe9859d8d0fe1404829f90806db05dbf92f3ea2d41adbbc6fd6acccfa5a7bcfc247f54b80fffea0ffac743fe80bf61ffc5f0121c8542a15028140ac5112ec8de0994ebcf25e9bb99cf926706896a7b91035c2598f9afb6dd4ad63739cae9412ec9debd9e7b73da81d3738c7e991fe0520746558287d04ccebe84dc26a684df70aec579d15d48f5fb8c9fb0f3e9110502aea12ae9e4f465253efe5a8c89a8a2f05bcd8388102c0eb14ff87166bf63727f5773ad00970c7fbd9cac12509e17547b1d4e7f975837783126c232096c342e2aecff202138f72786b3b5245f4b724f793c7dd97baa4a30486613a90a6c25048d4fc9c74492c0fba2023d9ab2c16c99127e78d7ec879a077e9aae12f864f8a82ae08da56ee04644de241f0a4d050be0137e71ce1ca5fad35582e10a8cca87c9a06e302612678742830f9cf0634d024283c9bda4fa357ea0fed77495c0d54b58b938195505fa3dc0758340542191776024347f9721e187dd5b52721ff2784ce0f1ebf8a92a01d6bed88854830eee86950975835eba2ff8c3f9ae1c0a2f3af80a8542a15028148aff35fe01adf27976bd56d0540000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078325f7932bc552e360000000049454e44ae426082;
+ICON DC 89504e470d0a1a0a0000000d4948445200000080000000800803000000f4e091f90000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c000000b4504c5445ffffffffd6ceced6ffffd69c3100319cd6ff63adff31000000000031adceffffce9c2900000063ceffff0052cecead3100299cffff9cffad636300003100633184cece520000529cce84310000319c5200ffd6639c84cece849c63ad9c63adcecead63ceff9c6352639cffff6329319c293131299ccead9cce846363d6ff6300639cadff9cad9c3152639cffce9cadce3129639c849c9cd6ce6329006300319c000000009c63849c9c529c6384ce9c2963ffffff661461d20000003b74524e5300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001d2dd5fc00000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f288720000040d4944415478daed5a8972d3301015387614258e639924755dca61ae42cb7d14feffc3d84bb27391304002c3be9934b2e427ad5652a6fb56c628140ac55f803b774f3b7e3248ff6b03b26468edc8b8b1b5931cac81279b1dd380498e1e70e3a931c58cca60c4312d18a4250cea71f6659595f7f263ce9e0dc059179630370b6b97a730e06c1667ee2ada0c47348096a0ee9d04571d790fc078ee1c5c0056d05e38eeb984c1ceed948e217ac15bfe5628140a8542a15028140ac5f1604f8c53cf5fa15028140a85e22f40b32b41b4384034df2497ebb98666b82703b33b4756ccf78d9f0c37c81bc90e3fdddbc92e03dcc55e0fac92dd38eb7d09eeef4bfffc528e6ecd009efd4f667c6009cae16535c9316782a92bcc99587e9cc3923e18631a8d9f0867d0fa10589e98d08c7b052b1f55f4e7b2a27fb7a93df0ce6c4884f5d90d8e6b16f631d4b5f0ea1c3eb31c775131cbdd9314e6f7a0b275ebebd43d4dc36c9b67b979dee2037c9261dd9ac524c7cafb58e92a9b491b7e9057c26bd0fca25d673f66aba0bdc4ae395d052f0f60ac7b39f9c18ee8d541ea25ab485e5f8aef136182cbcbe134565ef50c68422f61276eb2791e5028c00bd0d7c88d47c6cff2861389a1a32ead0816c39a20b7146659cdf13c70a5f42b1f2f3ce04c77b0a325de667c8a3d79c64ffa06f89554a68f6e26663268572afb1e883c1f0fec1a3b7ac08de1655cfc97c4e144e25c6c952732e915fc468dc055a6e09e30ef4d95f3dec4a41d3715f098b3951d82d38c37fa0c9dc0cb0ddbc94ee1a1be1ec246a42759452a2dacbd194e72cc398f4225f6606dfd7a0c2e3ce776e609678d6db75f14706ff0bde327d123288dbdff57f8cf81fc78c2f1150a8542a15028140701ef7e6e46a00dc60fed56028a04ccd82b171c02f85f1b82c6750330dcf43bee62fa29923273805c70106254b351fb76bb01ef4c08e5af7fc7f8319a5a054650173f246dad972581b8dd2e31786fe1fff24cc27afc927629728378a0271a987389737c500e4458085c2249c9d7ef3fd8a563e1c1b01495d0c5d6966e931699fb487280fb9485dbae5294060e005942e0692d3ee7106f49acd9131688fb31151180e5822f18eb795ba7d4a18917581728752c60b7dc0671c07741b9143bd5a00cc13f47ac1820c7603778482ec776a4a6273a60208bc28391299cd92b3418bce033237240d11920c54e3548bae01fd978fcd81bbd1059dce323c9af880e2c3c8801787e607058a4e56d14077a876ab5463cd06baee395f4be07babea9e16a557460e1410c28a007fc9886227596035c05bb24f94aebc8c54e35c03d308ea281aba06b5e82b28bfde5a832091dbf2a3ab0f060f81631aa0237283bba6f2d7548613c7e0591858b4135401da0271a88aa40bb30c4fe242cf02e0c52431ae997f0066ec6d4fd96df058542a15028140ac53f8def71ef4f5eba8da9fb0000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078335f793204e949530000000049454e44ae426082;
+ICON EC 89504e470d0a1a0a0000000d4948445200000080000000800803000000f4e091f90000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c000000a5504c5445ffffff00ad9c0084ce00adce00849c0052ce00529cffffce9c290000000063adffffd69cced6ff3100319cd6ffffad63000063ceffff31adce9cffff3184ff9cad9c310000ffff9c6300000000319cad639cd6ce3184cece84319c520000299ccead31310063ffd6ffffd663ce5200ceffce6300319cffce00ad630052639c000063ad9cced69c63adce00009cceff9c9c29319c846300296363d6ff6384ce315263ffffffa853f14c0000003674524e530000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003ac1c4ee00000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000003f54944415478daed5a0977da300c4e0839594942d638ace11a74ddd5765bb7ffffd726c907090d98bdb653dfabbff7427064c93a0d46781ec01f051e2b8291cfad00b707c6cc0a8c02e610f841c8ab40c0ee81903b09036605c2201a781a2729213bca3779e74d2ea656f179513e9ed67be20f7a204e66a7059fb3b854a0b2301f0941f2feb914282dcca13f54867b0f603042e4b9ac2922723c81c10ce5e030ea9091a003279a74fe01437095b4305cc05ba4b69e66541e182ac378d9eaf54318442078557aeba2a47193910cb870e875c864dba4260de2a685aba8e0d91aa820520023ce12c0b8d4761fcb01cac156ba1033098582a8c94565bc08d723f266ef71a22d482935fb63e92921d37d68c2e19d5087600bba034f450bc38b4e2a21451e90a7de8e224240b33db1a9c8de560e73b06a8e0aacd13ee581c110e824cce50a53e9dbbde6d2a6ea805c91e753396741b44db9055abeba0693443327b5412522aa1c38598639b0602d6905844a601d8203b2646e321302b50fc49f2e2138a46e8e1ea888f19c2ac064899391b7552b50122691276422c6c9b847a60829454483d30a199e1d96523eaf20432904f152bbc0b60f983a5326c64b2a4b901891373a641ccb202b565d8630de526d4286cc6f9aac57863ef7a761c8fd7dc0e7fe3464ff42f20a42c07d2ee0ce81e18de82d79803d07d8ab807d1f60df095d15b0e740f4e6ab20f0b9ab803b04ecfb007b0ef057c167ee1070ff54fb2518f32d8e47e42018a75ce075bd83838383838383c3ab8168b2d313b6756615b23bd161b42c1037e969f9933ab52ab06cbdddaa3c428c1bdb0216f9d609276c8cbfdabdf70c0a1c9f61b31ebd8621c6ee85e91352076491e26d527f6b8aeff5ed929a2048ba2bc1dedb04a718a605354906a811c4372dee9bec80d5cc91feabb3f8c7d4341bc167d4559ac2ed678afd2f51c3eabba28a931604fdba6ed239b69c3a4c826c98f5a8899403c221c924ebea5e12af8c04edbfad6a527aaa4b47d8c12cd98ec417f02535c16080636c4fed99f0c921352a350517e8138d04adc07e55d95d24b73e48038c02ed1a1b6270174ae89e09671c50951c1cc1b5e8138d04c5fdd0e970abb77803058451607b51e5588e90f0caaa0e13796090aa3dd0279a399a9b7a78792bd3167b70bfd710f6b5f2004598ba8720142c53567598640ef4a9528e5aea806824c81ac60c6e642f508ed355890ffed4ea2f140b156b4ce515315cd690208609b3211ca2821cea81c3a84bc427728e758f7070707070707070707070f8af38e728ffb20ad87eaa7909d0095f9ed6e9285f3d5de4bf014ff8b7eab46eff21e40580c7b4993cad572c0a748fd0ec0a080e05e884af4eeb2c1ec013be3ed1df2469719ddc954f97eae0e0e0e0e0e0e0e0e0703efe0287fb606f206058790000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078345f7932993e71ea0000000049454e44ae426082;
+ICON FC 89504e470d0a1a0a0000000d4948445200000080000000800803000000f4e091f90000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c000000bd504c5445ffffff00adce00526300849c00ad9c0084ce0084630052ce00ad6300529cffd69cced6ff9c290000000063adce3100319cd6ff31adce9c5200000063ceffff9cad9c31000063adff3184ceffffceced663312900cead3100299cffff9c9cd6ce63000063d6ceffad63310063ffd663ce5200ceff9cced69ccead9c9cffffce8431ffad9c00009c000031ce29009cadffce849c9c000063ad9c9c84639c293131299cce846363293163526300296363d6ff31523131526363849cffffffabcf01a00000003e74524e530000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000fa0f3e9400000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000003db4944415478daed590d739a40108528a2841354826284108a4d4c63d3a4df69fbffff5677f70e8489041adab97466df8c72b7dcedbedbdbc38f6718fd609e983d3df4c4c0d44c60688df41230879a33608f3513304d4b2f81b13dd69d01cd5b30f9ab35e09cbe200376d32d5710a6cf8573bc9ac1f3ff98c0d86cac0177d6b2dc27e15e42c0b21a4fc1bc1b814500adb35088a5036f2b2382cc81cdc09e5876c8c0b0e14ee496c90797b0516befec5cee08f5d71060065bb08903278c0363b3089052e4c250b4213d276c65605a83d62d98dbf44ac21370bdb8a07e7a4919000249ba4c300e7413b064b87ab0396f824e5b3068cc802ac219b884b5c05b7e3ea530b9da694500d22e57ebf978dd08356d2bc4a403016bdc58034506d631bcbdf5fc2b0c038bbc5ed408506b5712b889cb95472915434b0d584dcf81a828c277907923f74e69e56bef34bb2d08ec4a02fe610bf67ec547da5e0366e3c7f1fb2203e8f27a7197c83070bda86600222605018817cd210560a35ae8702eede647715984ae2c42583c66c0a73a87178603027bbfcc803187d381c7102967425e5bb760d44a00fce2314cbc3baa81a20f6536a93f095f02ed1f46d668d0dfc97f9d81b179a29780ad3b03434bf357b2a1a5fb5bf158f329d05f03ba4f81f61ad07e0a2cdd35c04f42ed35a0fd14f093909f84da4f81a5fd4f2a53f31f95afe014f4cd80e8077364f673a0377f0c0683c1603018af0749bb3060e44704a4c3bc3c9c184f9b5d11a5edfa58764443abcccb0efa6566b7f97a8a0ef2d8d13107db8700f8dc2f8be6d165de3707e94f4026e4592f0db75d542b95a33c9cba2493dc08d4cc9cf02155b2d556908c19d168bc2ded346162483b6c089823e510a762fb3650ee0eb76f5114ba8089114ef6313a2987b8cd107d2b15cc6cff5194aad9360e80c332fa44a39dcf81f1652733b0df657b1fede00297117dc5e63798ba035a28c47e57ee7cba2d4d57a18089102ddbd30f9399ca005d647b0b23ca0493ae071172a14617658623c07d264a2f95a61441ebeea42e2a578cfdc43382ca5e5222a27406397b549409378b1d8dc994a898844ad4c409484cdab1a79a347583d3eaee9469e528024e5823401738dbc813e5bc820089894ef89895426626ca09486c517aa934e5a0babbc2941c08a04cb84a0a0236edf706026e2a1988b016a12745c5957307a3661502853d2c7447e9307261da26362aee94297064eae065406dda492a254227fc01e51ae00346fc0cc541bf8701d4c31b3629fbb632efcfb09ea41d8a1aca5c39144b7938e2d2dd74ae4e414cfe1ec0cbafb0fee3b4cbe3e09f22d74c0053ab39050c0683c16030180c0683c16030180c0683c16030181af01b5eb365918b8ccd180000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078355f79322182168f0000000049454e44ae426082;
+ICON GC 89504e470d0a1a0a0000000d4948445200000080000000800803000000f4e091f90000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c000000a2504c5445ffffff9cd6ffffd69c310031ced6ffffffce9c29000000000052ce9cad9c31000063adff3184cece8431000063ceffff9c520000529c00299ccead313184ffffff9c630000ffad63310063ffd6ceffd6639cffffce520000003131adceceffce6300310084ce9cffce6300639c000000009c9cd6ce63ad9cced69c9c84639c293131299cce849c0029639c003163293163d6ff9cadff31526363adce63849cffffff7c47d0c40000003574524e5300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007bff504700000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f288720000033a4944415478daed5ad9769b301015b842096083ed02adb738dd92eee9f2ffdfd659242c834f7b9a34751eee3d2144a33ba3d18c74f27031060000e0dc48fe75c074320e993efb8f3b3a91c0a99c9e4e0289b1997317ccbacc9d2be80f7af1db045b99eac490a8639b95c49cce2af12b65359e995581c91365b0c5e135019b51907a4e138bca2c290ea79be642519bd38921318c9734b4f5f3a62517323793c4d6942799e390cc165b145e13e838ad8e375048b1d217d5a17662f31343623fa690f4bcacb4d86186126a3c937232c11687d704560baecb644d3fdaad8d73f3be79dec6bf86443fa6fd965205d3516db79cc0d209cae0c96f6fdbc5e17d05e655cfd2158d6da55bfddabae080d88f4db7b8ca76e4b44dfc76a78bea287f26055b1c5eb0eec88f0ab40e713da78812d02c06c47e6cecfe92eada4911b8023a13b94b0bb6d14df0e1a343985d9b55d8d86cdd27b28a121811c3d850552f78ed351d176981ad29195ab10909d07ac1266721be97743e6be98a18255769a54c36c1a6972b224663ca53ae153577fb8a4e99bf86da1065d6725d356c141e00000000000000000010b873e2dc9b07000000000078c2685e570f0ff2008864f034f66fdf14f708703faf0336e521547baf04fece8ba50c5a72eabc94d4ecb901347473dbb291096f596f79979129639564e8a3f4ceb9829e1bf6bacd6f5a753de2a960f25e8905c53189fd90b034987eaccc27697d2f1ab1029517228ddaecf36deeb6ebce6d1332db2f039f88cef69cc3d392f6eb80c70aab59f6448e9374aae7a57950f3a63ed90d2dc844951c73912179dc4cc63e113dcdef7c78ddee114fe45596b19441f3a6587941afc9bda0b89c690beefc96646cdb3284a567e413d1534d5554d311af97323553961e8bae17113bd59483242bc21b5780cd5e88f52b9cf4f1746d81afc0901764dfe610a75041af4cbf5115777228f79425f529f4ca66dcb78568c67e6f231f4fb7edce2c5d9faa19c7ce44540f449a37ecc52a3cabea179a6dbd1379d57dcfdd8fdadf8205d580ce37917ed2611cf9344a2f36fc9a5d65d2fb42c31cc56603cb864aac6c7bf25eee1f5757fcf307158ffcc9852ae4bf857dcc7f46ddf11714000000000000000000000000000000000000e7c62f50d04246de2a21be0000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078365f79323337b9610000000049454e44ae426082;
+ICON HC 89504e470d0a1a0a0000000d494844520000003e00000080080300000064df2a730000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c0000007b504c5445ffffffffad6300000000009cceffce9c529cceffffffffce9c290063adffce8431005263630063ce52000000319cd6ffffd69c310000000063310031ffff9c9cffffcead31630000ffd66331006300299cce849cff843100529c3152ce31adce3184ce9c000000296331adff63d6ff9c52000052ce315263ffffff640167050000002874524e5300000000000000000000000000000000000000000000000000000000000000000000000000000000f694b05700000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000001294944415458c3ed92eb52c2301085b75b4d4d0569314da58ad41bbeff1b9acda6950a55879f7abe196048f6ecd94b88000000000000000000f08fc89839bfb834a76f8bab706da90cdfd78b1331cb9b155155afcd5cfa325e55b5a5ea767574195207dca29993fb28776d88bbdb7c89726da7b6f7b3ee0f6bd11422a772ab67cc8ff1b7aa7747ade6268cc3cae7a0f8e84ed526b9482f716efd44fdd4870ccf2676aa11e459b1630de2aeba8c5f265b1027575b772057f7a27d8d35f4d362dbed74ca8d9cf5227549aebd6bf1453bed55f726c2d48b8d9187ee3eb9db310991a14ccb28de6253cb5dfa17627d67c4c58fa36bc6590da363de7f6e9e8721ebe43b49c7fc1e9f527a7532bfa0f0fb7090cfeef807be795cbf6058dbb9dee7560d000000000000f8337c00d40c0e6badf5a7260000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078375f79328b8bde040000000049454e44ae426082;
+ICON AD 89504e470d0a1a0a0000000d4948445200000080000000320803000000a3e223870000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c000000a5504c5445ffffff9c290000000063adff9c520000009cceffffffff9c630000ce84310000639cffffffad633184cece520000299cffffcecead3163d6ff9c0000ff8431ffd69c31000063adce00529c6329000000319cd6ff9cff9cffd6639c003131adce002963ceffce31299cce849c3100310052ce63526331ad9cffad319c52316384ce9cadff3100639cad9c63d6ce6329319c293163ffff9cd6ceffad9c630063315263ffffff0fe1fbd30000003674524e530000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003ac1c4ee00000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f288720000031e4944415458c3ed5809939a301486c07248c0200d75a556dbaeadbdefffffd7faae40f058ddb6b3d399f26634c297bc1bc6f705c124ffa4844aa9280862a56e9213704ce86949b328f80b92cf0a5c74790aaccaa09a27674e9a8739a0cfdcafe70c2f1e14a369ae327ecdb6271ca13eb5d3b6671db82efa6bb6d5bd0369f634544b3875ab14152487fe587526a4fee851b85c9a4ca9d933d08e7b19bc45908cf2f19c76c01755189be97e07d611285d151a0c3eef5ce8292c26dcc067fbc2a19054586003ec8f4c53fa20d9e7e3f66512bc4afa1456872dae97ee572e3d1091557bd7698552ba12e859423f1cba4c1c029ff5182445747c63db9d57437b578ccdabd76f3269fbbd3c0511c58b4a87b6c7f335e2262b059584e1157cf231488ae478da424d5271401e354faafe8e64ee6d11ac590b853c38a0f145008f831da12e036390f4f5c7e1a4cb8018f12b10ef5ca3c6e8f21ebe2c474537f8b5c03d001a216e89d964503cfb4e2c1e80bd3e5ddaf710e5c6399066b3710fc451fac1ddc1b6c60e4ea1933eb6d04dd8e23b57ce1de1f3313a4fe8105e8d40ee423a6e5b39cb96f1e635cfed24934c32c924934c32c92493fc8fd2b831ecb40c7fec2f8cb9e707e94b92cf92f3e0ba658204fef8dfaf5f2bf5bb0ed4c70c88472bf4d3e5a500ff2003c70e78f97e0407f6ce01d3483710fb50e434b0d9f6538823174d898d631ed412533ea43d564475e1862db1150d4ec6bc0c7acf6640ec7fee790937edeb55615bb00ea3340ea25fbe12154040e7cdc3c463556ac154c60db2159d5e7de3a5f3f49e967acb1938e02550af623bc8f4d87621cc83001e2340cc448a937b412b4dd9779d2c9e5e5f7c86441c187a018982a056d15a1c48339cb3851b811238401cc88526a97135b4172f8ff90ecfbccf90d086ef85c74ba4c2cc680e1443c40cf006060a3b3002c43ea08763b6c21ef11dbe0c0c09f99ffe80491f22d41b57821ab4d61ca809774c4620f3b0c91980ac602ec8df0c948187c456e4cc56f41958787a4715700c494325a26e75bc04d10ad04aea27bc866aaa3b32101d6f300254b87018780b1f03622b12c36c05f217445a0c7a3df11992491e4d7e01aa953f520356e7050000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078305f7933615bd62b0000000049454e44ae426082;
+ICON BD 89504e470d0a1a0a0000000d4948445200000080000000320803000000a3e223870000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c000000bd504c5445ffffffffd66331000063adffffff9c630000ffad630000639cffff000000ffffceceffffffd69c9c000031299c9cadce63ad9c9c29003184ce63adce0000319cd6ff9cff9c00529cce843100009c9c8463ce52009c29319cad639cd6ce63526331003163293100299ccead63ce849ccead319c003163d6ff31adce9c52000052ce6384ce9cadff9cffce3129319cad9cceff9c31523131526363d6ce9cd69c00296363ffff63290063849c310063630063ceffce31849c9c84ceffffffc3c7bba80000003e74524e530000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000fa0f3e9400000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000003b54944415458c3ed58eb969330100e90041258ed0504dd7555b4d2d6fb65d5f5f2feafe55c120aa7b4e5ecaeee1fe6149a4cbe994c6602877c424c72df12849154d131c4def03ebeaf39e18f45c709378c89ec7183bde10185890ef50e079072230b116dcf46d81c167632dc3b20c1837e0063b276a701d887ae0125906aa68c89133b3766c1e185cbb9c90bf89fa9f8910204f44bb002448935ce1c405406353865d79a7b8f53769054e81db20ed8fc094c080d0a1141e2dc2ca166e4e1a270c103009c9fc74fc130859202224f745e60a1747ea9cc330748b2e705680a1946f685b716d89b2fc07dfd121d50b65fa5a282e62a2f10e4d2fe1a4c10cd3f0ad02d820019abfd3fcca5cb94471b0f80deb921a741cf3ac02d265b07a570cf0638916d003421b6f927823aed55d1aa35fd4b1e866b55bb00220f8012349c01ddb3ae30e5562d78261962992059784395e400c824db6520eeb8680497ba93019824f601900700a04673067ad6daf0b874fb11fa9c8c5e06c844b619b01b8848bb246e21b775ea4be0a2b60a7299bd211302604de14a32ac7ac71a7a58f03ae515bc05ec9a541000e66d459b90261454bafcdd9cb79bd9ba35bc87cd9d4a45cf08213e84b01111517f54d8fb84007ce998cf218e27ad3518c07e850d5e0b7200de680401b477d184168f9ae187549e7a924f020ebd3070238c90e094ff51ef9ac1009251b0d01c7f9d9f041c107cf06ef5ca9d64924926996492492699e49fc8209d308a63382e63bf5be5109d2047710c47458ffefc1c8cf4669fdd3d9a63b48b3b0ca057b8d12ef09063cf3cb940cd9294cc3d086617f8ce389d7f393325b44be134522d51a3988800d9183a0138bf55aba71379fc95680b1cbc4af92879f1cd076cbf47eeb82b997bc8885d608ec15e3480fb01a7c442e3054740a22590c028d88a57b1a99137689c5f76e153b472b4859daf91c37087e9965cd02d0520987b90cc2ed09d716b7fc28710bb1a3e7993359e00913360bf6cec07b26b3e33134f27439acb311f2855d916b0325190e30231d570df8a962189fc15d45d8dcf0092319d51e702f30babd6eed0be4290559c811db9e0f843a7d4c84309621b44603c41217701ec288b6e003a6f4467b4754139041d65ca71187412667261cd5582937cb6443e86b88782d905cf311009c1d3e17668ecbc444ba7f10148855cc46e948c29033f93b6c0445854359204b0975a6a824883ab5fa0bc64ee6146ec428763a0cd8e5ada8c5e4304c6e5c6f09a898b200eb6634c91a1fa37d11682398cff2bf60faeff3abdb5a39b0ad16cd5fadee6a7ac9bfefc7f01b8cd43dca454275e0000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078315f7933d9e7b14e0000000049454e44ae426082;
+ICON CD 89504e470d0a1a0a0000000d4948445200000080000000320803000000a3e223870000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c0000009f504c5445ffffffffff9c63000063adffffffce00000063adceffd69c3100003184ce9c2900ce843100529cffd6630000639cffff0000319cd6ff635263ffad63632931310031cead319c0000630031ce520031299cceffff0052ce9c529c31adce00299c63d6ff6384ce9c52009cadff3152639cd6ce9c29639cad9c315231ceff9c00009c63d6ce0029639cff9c63849cce849cceffce632900ced69c63ad9cfffffff601e96a0000003474524e5300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000411199ec00000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f288720000033c4944415458c3ed588972d33010956c2972129f1549701d9c10288572c3ffff1b7b48b29d347106ca7418bc8327deb787d62bd9659f10933cbfc828867f676d97e2ae483d8eaa48cf22fd782e75ce3062bbe872829a2496c9995c2639bfc825db4597631474f38c05cc7d07d442eb39634bad754a77191882063779016e31232604c968b64017d4dccffc341c34702b2bf8bdd13ab6708151d0ea904bbda87c696655090b8e2068eb34bc156b8f481f0447a82c00509b1871f532641a84c38af05be785e427069fecb6117ace1dc8348a6b81a8b55b9212794dd45ba15e350e313ea8452f58c8a668c2857ca6613869fcb8860b90492a3c64774dd896a5dedb2e661d347894c2421246640872e9d6ac655da6613815a0a2d6ed395fc2bf05591ec22cdcc2522ea6a7c1eea6d00046a80379bf00cb9acdfb050c93d147a0eb00b9b7acab05146ea9716b28785dee5d0c6bdc0191e12bcc48d105b9e751d116225eab43c8247df89e35b0d7bb865c5b684d6cde08b195116e5959c0f7416f691544de269acad5e55dd0b005ef0afa92201282d0eb3e010d0361f190e928dc24efe18568102d6a44f30f891e7b939f52aef870fc5dc99eb90093e8d1bf1e934c32c924934c32c92493fc8b72b8f01fbd310ae30a8a6354ea56d40fcd19a3babc801ca7381e4bba890739e2abfc1e97df1a14864b9e4f714d7b29da3aae00c6fc8dc6194e6d70b6b6e5c78d4ee13ef5888c668844c85210552198c9282b24243e35ce81ddd9ef3314815a67ecfbcc693e160d0faa378e3d689873f802a35e65f182fc8185a8782616e65688af612e568b16ae876fce417d8fddec8c6cd4d07817f553e24c2c85232bf69e3db01de74043efaaea23ab8a27e1d4371a348bcd6092011c0ac719b8b44363658e531a3177a3ba1bdedb21e7403cca00213f98b2d2b08b6be4039877609a42f4dc8f8cf224a5ef003375f0de387a417605d8fca4003c3ab107ad0ebc03bb0736821a3a300e53f219908e2b40f6e0b06bd422457a813df77831e29e81b60a7905f800843300e996c43b08e3698a995beac8e836c6111b7406904342aee007b3074c3fd021fe09d32c1d468f100b7177d0c82b3003817bb96576aef10e15d31408fa5764e78d88dc0f53fed947e12945feafecc12fea2a3dd86d41cf1f0000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078325f7933cb521ea00000000049454e44ae426082;
+ICON DD 89504e470d0a1a0a0000000d4948445200000080000000320803000000a3e223870000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c000000a8504c5445ffffffffd66331000000529cffff9c63000063adffffad630052ceffffce0000009c849cffd69c0000639cffff9c29003184cece8431ce849cceffff6300319cd6ff632931310031cead319c003131adcece52009c529c00299c00003163d6ff9c520031adff9c296300009c9c000063adce63ad9c0029639cff9c9cffce31299c9c8463632900cead636384639c293163ffff9cad639cadffffad313152313152639cd6ceffffffdfc93dd20000003774524e5300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000958ae13600000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000002774944415458c3ed586b939330140dafd0440aad885b610b55ebfa767dffff9fe67d05e80e3ab542c70f39b35b9293e4e472933093a394c7ff83208c549ce849fe2a4857ca24564ff1d7c123f8cf423dc95f0d53012c0cbbcee9690a6b37140095b6161aa0a49997e645f0b8a4f99f542a0e35fc99a715c691dd544aedb479463c362f9b9dd4226a9824e0926a604fde96c2f3639114583e63e99e1201014849a56d9e6a9546e5a8799957a7c4a66b09a09312ac7a745b3ade914ba0a969ba03bc638a4bc0a50d7c8030345360ed794fce0f2b9f19f806d9559cd8b6a212322f72e1236986705e2e97090f0f0f0f0f0f0f0f0f0f8ff3f1bb4be21f2e8f0f8d8f2923e46cc03d51ff0d8f300f2634ff12c02519988ae978710c3305204920278287bf3ac2c58c18b88c65e15dc20de668edebd21107bca76bae60cb46f4985703e5f4a8eb9b449fe8bc4dee12b2408eea5dc91605ac20f43eac737426d2f63d34cb2df9c306ef841f9968e092dad84f5431f7836bc17c67ee3f0be5f4be605734bf4c51f73a7007452f04143ad57b70342ea6c18d6df33e9f7433079e88ec261f2a23d782fc14e0c794e8f138685ae727757c4277288a45c103921a9640076dd507b0c5004c5213b1c34a46568e72e645df09ed95c1c8707a3261b71beb88042b047c7a48137606be71da56719f014b4232276e92cc6560702d1c3fa29c5e2c9938d1914c60f7afcea208c2152de537d0da8d32600ac8dd765f662c08159701362f6870cc7c678ac8514ecfbd31e894bd8e484077155ab128b2f03becfe92ac881f21ef6989004f05d29a8d0a8676ae851c2a26074af4681c1b1fa0b3e73afcb43f0bda9d979ee2cbbf16f30d98590f4e839d338273f57e01ae142c27d8414b310000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078335f793373ee79c50000000049454e44ae426082;
+ICON ED 89504e470d0a1a0a0000000d4948445200000080000000320803000000a3e223870000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c0000008a504c5445ffffffffd69c31000000529c63adffffff9c630000ffad63000000ffffcecead9cceffff9c00003184ce9c520063ad9c0000639cffff00299cce843163adcece520063d6ff9c293163ffff9c29000000319c846331adceceff9c31299cce849cffd6633100319cd6ff9cd6cecead310052ce6384ce9cadff002963ceffce9cad9c3152639cffceffffffa288400f0000002d74524e53000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e99ffc4b00000001624b47440088051d480000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f288720000017d4944415458c3ed945b5b83300c860bf4905a54066e134465083a0ffffff799b44571570e9d37e67d5869d3927c4dd309c1300cc3300cc3300cc3300cc3fc7b92349b0fe4a16986d2f20402cc2c98019007a639f62402cedc9774c843d377b1f96fa80b0216b1f87c00ce63ef02808ec0e6de44af0c155dea6245fdd2f9181540b1fa6c7189d25739645693297ebb6cd76b0cb1868ddd5e93c9d65298e606bd3a61eb167fe5ad06a9ee9cb8775d68773d2e79d0d0f4a6e9c98dddf6c72711a2e604dd09954a437980d694ee439dc1ddd254420f15a89aaec91a4264b5eb715e846f8f4e41a0c2ad52bc2e441e6602069ab2baa54192c228623b80ec1a1fd94b4301d992f28d60167d3c537827f1a57c06e8726201f881e820b6b424e67e12502c10804e5a1f0a8b0d1d6d6c9d91c96adae8a3cf80add171553a1ca827cc7b9bf8b642c9c32460830f15cae4ee981a184387ea98ae01bdc730dc3f6bffd7646bba0568695e529a4c7c4b2b5eb1e7adcd5b8df51abeb5f9fe0747c1fc35ef19c315530fbb88690000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078345f7933ee39417c0000000049454e44ae426082;
+ICON FD 89504e470d0a1a0a0000000d49484452000000800000003208040000003e351b3e0000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c00000002624b474400ff878fccbf0000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000000794944415468deedd0411100200cc030867fcf20238f350a7a9d7776bb3a406b800ed01aa003b406e800ad013a406b800ed01aa003b406e800ad013a406b800ed01aa003b406e800ad013a406b800ed01aa003b406e800ad013a406b800ed01aa003b406e800ad013a406b800ed01aa003b406e800ad013a40fb024901633143ac700000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078355f7933568526190000000049454e44ae426082;
+ICON GD 89504e470d0a1a0a0000000d49484452000000800000003208040000003e351b3e0000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c00000002624b474400ff878fccbf0000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000000794944415468deedd0411100200cc030867fcf20238f350a7a9d7776bb3a406b800ed01aa003b406e800ad013a406b800ed01aa003b406e800ad013a406b800ed01aa003b406e800ad013a406b800ed01aa003b406e800ad013a406b800ed01aa003b406e800ad013a406b800ed01aa003b406e800ad013a40fb024901633143ac700000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078365f7933443089f70000000049454e44ae426082;
+ICON HD 89504e470d0a1a0a0000000d494844520000003e000000320804000000ae0aa0b40000000467414d410000b18f0bfc6105000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c00000002624b474400ff878fccbf0000000970485973000017110000171101ca26f33f0000000774494d4507e0011f121d0c06f28872000000334944415458c3edcd410d0000080420b57f672de1761f28406fe54cf096cbe572b95c2e97cbe572b95c2e97cbe572b95cfee0002f680163212f59f20000002574455874646174653a63726561746500323031362d30312d33315431393a32393a31322b30313a30307ff240450000002574455874646174653a6d6f6469667900323031362d30312d33315431393a32393a31322b30313a30300eaff8f9000000137445587466696c656e616d653a74696c650078375f7933fc8cee920000000049454e44ae426082;
+
+
+
+fonctions_chimiques()
+BEGIN
+
+LOCAL pagenum=1;
+LOCAL pagetot=1;
+LOCAL basename="fonctions_chimiques";
+LOCAL tw=8;
+LOCAL th=4;
+// +---------------------------------+
+// | powered by mViewer GX Prime 1.7 |
+// |   by Xavier (Critor) Andreani   |
+// |         licence:  GPLv2         |
+// +---------------------------------+
+LOCAL tw1=GROBW_P("AA"),tw2=GROBW_P(char(65+tw-1)+"A");
+LOCAL th1=GROBH_P("AA"),th2=GROBH_P("A"+char(65+th-1));
+LOCAL w=(tw-1)*tw1+tw2,h=(th-1)*th1+th2; // image
+LOCAL mx0=0,my0=0,mx1=0,my1=0,mx=0,my=0; // mouse coords
+LOCAL is=0,ig=0,ms=0; // mouse mode
+LOCAL sw:=320,sh:=240; // screen
+LOCAL x:=0,y:=0,d:=0,ld:=0;
+LOCAL ss:=1,sf:=0,spu:=1.01,spd:=1.1;
+LOCAL ssu:=1,ssd:=1,ssl:=1,ssr:=1;
+LOCAL z:=1,zp:=1.01,zmin=MIN(MIN(sw/w,sh/h),1),zmax=4,zold=1,zw=w,zh=h, z0=0; // zoom
+LOCAL tk:={7,2,8,12};
+LOCAL td:={0,0,0,0};
+LOCAL ts:={1,1,1,1};
+LOCAL tt:={0,0,0,0};
+LOCAL i,dsh:=0,dsv:=0,dh:=0,wh=0;
+// help grob coordinates
+LOCAL strh3=16,strh2=14,strh1=12,yt=1;
+LOCAL x0=100, x1=0;
+LOCAL x5=sw-5-x0-1;
+LOCAL x2=x1+(x5-x1)*5/9;
+LOCAL x3=x1+(x2-x1)/4,x4=x2+(x5-x2)/3;
+DIMGROB_P(G1,sw,sh); // offscreen grob
+DIMGROB_P(G2,w,h); // image grob
+DIMGROB_P(G3,x5,3+strh3+strh2+5*strh1); // help grob
+// render help grob
+RECT_P(G3,x1,0,x5-1,strh3+strh2+5*strh1+2,0,#FFFFFFh);
+RECT_P(G3,x1+1,0,x5-2,strh3+strh2,0,#FFFFFFh);
+TEXTOUT_P("mViewer GX 1.7",G3,x1+3,0,3);yt:=strh3-strh2;TEXTOUT_P("(TI-Planet.org)",G3,x2,yt,2);yt:=strh3;
+TEXTOUT_P("http://tiplanet.org/gxprime",G3,x1+3,yt,2,#FFh);yt:=yt+strh2+2;
+TEXTOUT_P("*/",G3,x1+2,yt,1);TEXTOUT_P("zoom in/out",G3,x3,yt,1);TEXTOUT_P("Home",G3,x2,yt,1);TEXTOUT_P("zoom 1:1",G3,x4,yt,1);yt:=yt+strh1;
+TEXTOUT_P("+-",G3,x1+2,yt,1);TEXTOUT_P("next/prev page",G3,x3,yt,1);TEXTOUT_P("0",G3,x2,yt,1);TEXTOUT_P("zoom fit",G3,x4,yt,1);yt:=yt+strh1;
+TEXTOUT_P(CHAR(8853)+CHAR(8855),G3,x1+2,yt,1);TEXTOUT_P("progressive scroll",G3,x3,yt,1);TEXTOUT_P(CHAR(9742),G3,x2,yt,1);TEXTOUT_P("screen scroll",G3,x4,yt,1);yt:=yt+strh1;
+TEXTOUT_P("",G3,x1+2,yt,1);TEXTOUT_P("",G3,x3,yt,1);TEXTOUT_P("5",G3,x2,yt,1);TEXTOUT_P("center",G3,x4,yt,1);yt:=yt+strh1;
+TEXTOUT_P("Help",G3,x1+2,yt,1);TEXTOUT_P("hide box",G3,x3,yt,1);TEXTOUT_P("Esc",G3,x2,yt,1);TEXTOUT_P("quit",G3,x4,yt,1);yt:=yt+strh1;
+// concat image tiles
+FOR y FROM 0 TO th-1 DO
+ FOR x FROM 0 TO tw-1 DO
+  BLIT_P(G2,x*tw1,y*th1,char(65+x)+char(65+y),0,0);
+ END;
+END;
+x:=0;y:=0;
+REPEAT
+ tt:={0,0,0,0};
+ dsh:=0;dsv:=0;
+ // touch events
+ mx:=MOUSE(0);my:=MOUSE(1);ms:=MOUSE(4);
+ IF ms=2 THEN // drag
+  IF NOT ig THEN ig:=1;mx0:=MOUSE(2);my0:=MOUSE(3); END;
+  IF mx>mx0 THEN tt(1):=tt(1)+(mx-mx0)/z; ELSE tt(3):=tt(3)+(mx0-mx)/z; END;
+  IF my>my0 THEN tt(2):=tt(2)+(my-my0)/z; ELSE tt(4):=tt(4)+(my0-my)/z; END;
+  mx0:=mx;my0:=my;dsh:=1;dsv:=1;
+ ELSE
+  ig:=0;
+ END;
+ IF ms=3 THEN // stretch
+  IF is THEN
+   z:=z0*(((mx-mx1)^2+(my-my1)^2)/((mx1-mx0)^2+(my1-my0)^2))^(1/2);
+   dsh:=1;dsv:=1;
+  ELSE
+   is:=1; mx1:=mx0; my1:=my0; mx0:=mx; my0:=my; z0:=z;
+  END;
+ ELSE
+  is:=0;
+ END;
+ // one time key events
+ IF ISKEYDOWN(3) OR ISKEYDOWN(45) OR ISKEYDOWN(50) OR ISKEYDOWN(32) OR ISKEYDOWN(37) OR ISKEYDOWN(42) OR ISKEYDOWN(33) OR ISKEYDOWN(43) OR ISKEYDOWN(34) OR ISKEYDOWN(39) OR ISKEYDOWN(44) THEN
+  IF ISKEYDOWN(3) AND wh THEN dh:=NOT dh; END; // help
+ // navigate pages
+  IF ISKEYDOWN(50) and wh and pagenum<pagetot THEN
+   EXPR(basename+(pagenum+1)+"()");
+   RETURN;
+  END;
+  IF ISKEYDOWN(45) and wh and pagenum>1 THEN
+   EXPR(basename+(pagenum-1)+"()");
+   RETURN;
+  END;
+  // screen scroll
+  IF ISKEYDOWN(32) OR ISKEYDOWN(37) OR ISKEYDOWN(42) THEN tt(1):=sw/z*wh; dsh:=1; END;
+  IF ISKEYDOWN(34) OR ISKEYDOWN(39) OR ISKEYDOWN(44) THEN tt(3):=sw/z*wh; dsh:=1; END;
+  IF ISKEYDOWN(32) OR ISKEYDOWN(33) OR ISKEYDOWN(34) THEN tt(2):=sh/z*wh; dsv:=1; END;
+  IF ISKEYDOWN(42) OR ISKEYDOWN(43) OR ISKEYDOWN(44) THEN tt(4):=sh/z*wh; dsv:=1; END;
+  IF wh THEN wh:=0; END;
+ ELSE
+  wh:=1;
+ END;
+ // progressive/continuous key events
+ // zoom keys
+ IF ISKEYDOWN(38) THEN
+  x:=(w-sw/z)/2;
+  y:=(h-sh/z)/2;
+ END;
+ IF ISKEYDOWN(40) THEN z:=z*zp; END;
+ IF ISKEYDOWN(35) THEN z:=z/zp; END;
+ IF ISKEYDOWN(5) THEN z:=1; END;
+ IF ISKEYDOWN(47) THEN z:=zmin; END;
+ IF z>zmax THEN z:=zmax; END;
+ IF z<zmin THEN z:=zmin; END;
+ IF z<1 and zold>1 or z>1 and zold<1 THEN z:=1; END;
+ IF z<zold or z>zold THEN zw:=w*z; zh:=h*z; x:=x+sw/2/zold-sw/2/z; y:=y+sh/2/zold-sh/2/z; zold:=z; dsh:=1; dsv:=1; END;
+ // scrolling
+ FOR i FROM 1 TO 4 DO
+  IF ISKEYDOWN(tk(i)) THEN
+   IF i MOD 2=1 THEN dsh:=1; ELSE dsv:=1; END;
+   td(i):=1;
+   ts(i):=MAX(ts(i)*spu,1);
+   tt(i):=tt(i)+MAX(ts(i)/z,1);
+  ELSE
+   ts(i):=MAX(ts(i)/spd,1);
+   IF ts(i)>1 THEN
+    IF i MOD 2=1 THEN dsh:=1; ELSE dsv:=1; END;
+   END;
+  END;
+ END;
+ x:=MAX(MIN(x-tt(1)+tt(3),w-sw/z),0); y:=MAX(MIN(y-tt(2)+tt(4),h-sh/z),0); // repos image correctly
+ BLIT_P(G1,-FP(x)*z,-FP(y)*z,sw+(CEILING(x+sw/z)-(x+sw/z))*z,sh+(CEILING(y+sh/z)-(y+sh/z))*z,G2,FLOOR(x),FLOOR(y),CEILING(x+sw/z),CEILING(y+sh/z)); // disp img
+ // clean borders for images smaller than screen
+ IF zw<sw THEN RECT_P(G1,zw+1,0,sw-1,sh-1,#FFFFFFh,#FFFFFFh); END;
+ IF zw>sw and dsh THEN
+  RECT_P(G1,0,sh-1,sw-5,sh-5,0,#FFFFFFh);
+  RECT_P(G1,2+(sw-9)*x/w,sh-3,2+(sw-9)*x/w+(sw-9)*sw/zw,sh-3,0,0);
+ END;
+ IF zh<sh THEN RECT_P(G1,0,zh+1,sw-1,sh-1,#FFFFFFh,#FFFFFFh); END;
+ IF zh>sh and dsv THEN
+  RECT_P(G1,sw-1,0,sw-5,sh-5,0,#FFFFFFh);
+  RECT_P(G1,sw-3,2+(sh-9)*y/h,sw-3,2+(sh-9)*y/h+(sh-9)*sh/h/z,0,0);
+ END;
+ IF(dh) THEN BLIT_P(G1,x0,1,G3); END;
+ BLIT_P(G0,0,0,sw,sh,G1,0,0,sw,sh);
+UNTIL ISKEYDOWN(4);
+END;
+
+
+//--------------------Autre --------------------\\
+
+
+//Formules de Chimie
+T4_FC()
+BEGIN
+PRINT("
+           ~~~ Formules de chimie ~~~
+
+
+Masse Molaire
+
+      ma    | <- g
+n = ------  | <- mol
+      Ma    | <- g.mom^-1
+
+Concentration molaire
+
+      na    | <- mol
+C = ------  | <- mol.L^-1
+      V     | <- L
+
+Concentration massique
+
+
+        ma    | <- g
+Cma = ------  | <- g.L^-1
+         V    | <- L
+
+Masse volumique
+
+
+      ma    | <- g
+ρa = ------ | <- g.L^-1
+      Va    | <- L
+
+
+Densité d'un liquide
+
+
+       ρa   | <- g.L^-1
+da = ------ | <- sans unité
+      ρeau  | <- 10e3 g.L^-1
+
+               
+");
+END;
+
+//Crédits
+T4_C()
+BEGIN
+PRINT("
+Ce programme a été réalisé par periappi.
+Il comporte en grande partie le programme de physique chimie de 2013, niveau
+Lycée, terminale scientifique.
+À l'exception du code, le contenu du cours est directement inspiré de
+celui de Shyked, qui a originellement fait ce programme pour les calculatrices
+Casio (http://goo.gl/gRPIzk). Merci à lui ! 
+
+Me contacter : 
+
+Mail + Mon Twitter : periappi@outlook.fr + @periappi
+
+Contacter Shyked :
+
+Twitter : @Shyked
+
+Pour les éventuels contributeurs : 
+
+Les sources de ce programme ainsi que les cours associés sont disponibles sur : https://github.com/periappi/physique-ts-hp-prime
+Cette version n'est pas définitive, j'encourage vivement les motivés à éditer le programme pour l'améliorer.
+
+###################################
+Programme original par Shyked.
+Ce programme est sous licence Creative Commons 2.0 BY-SA. (http://goo.gl/afFdzz)
+
+V.1.0
+");
+END;

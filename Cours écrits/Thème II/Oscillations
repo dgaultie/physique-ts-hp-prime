@@ -1,0 +1,23 @@
+~~~ Oscillations ~~~
+
+
+*Oscillateur mécanique : tout système dont l'évolution est périodique.
+
+*Pendule simple : Masse ponctuelle à l'extrémité d'un fil inélastique (de longueur constante)
+
+*Période prorpe :
+
+		/l\
+T = 2π√(---)
+        \g/
+
+où T en s ; l est la longueur en m ; g le champ de pensanteur en m.s^-2
+
+
+*Période propre avec un pendule élastique :
+
+		/m\
+T = 2π√(---)
+        \k/
+
+où T en s ; m est la masse en kg ; k la constante de raideur du ressort en N.m^-1

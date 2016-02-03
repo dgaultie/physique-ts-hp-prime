@@ -1,0 +1,40 @@
+~~~ Mouvement dans un champ uniforme ~~~
+
+Décrit par le "vecteur champ"
+
+   Va-Vb     Uab
+E =----- =  -----
+     d        d
+
+     		(V)
+(V.m^-1) = -----
+            (m)
+
+* Méthode d'étude d'un mouvement : 
+
+- Préciser le système et le référentiel
+- Faire le bilan des forces 
+- Utiliser la deuxième loi de Newton
+- Obtenir les équations de la vitesse depuis 
+la quantité de mouvement
+- Obtenir les équations horaires            
+- Etablir l'équation cartésienne
+
+*Equations horaires :
+
+x(t) = Vo*cos(θ)*t
+
+z(t) = -(1/2)gt² + Vo*cos(θ)*t
+
+*Equation cartésienne : 
+
+
+             -g
+z(x) = ---------------*x² + tan(θ)*x
+	    2(Vo*cos(θ))²
+
+*Force électrique : 
+⇒     ⇒
+F = q*E
+
+

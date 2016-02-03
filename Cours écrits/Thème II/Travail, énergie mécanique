@@ -1,0 +1,78 @@
+~~~ Travail, énergie mécanique ~~~
+
+* Différentes énergies mécaniques
+
+Ec = (1/2)*mv²
+
+où Ec en J ; m en kg ; v en m.s^-1
+
+Epp = mgz
+
+où Epp en J ; m en kg ; g en m.s^-2 ; z en m
+
+Epe = (1/2)*k*x²
+
+où k : constante de raideur
+   x : élongation du ressort par rapport
+       à sa position d'équilibre
+
+
+*Travail d'une force : transfert d'énergie du système soumit à 
+l'action d'une force dont le point d'application se déplace.
+
+ ⇒ ⇒   ⇒ ⇒
+ W(F) = F*AB = F*AB*cos(α)
+(AB)
+
+où W(F) en J ; F en N ; AB en m
+
+*Conséquences de l'angle α
+
+- α<90° alors W>0 : Travail moteur
+
+- α=90° alors W=0 : Travail nul
+
+- α>90° alors W<0 : Travail résistant
+
+
+*Travail du poids : 
+
+m*g*(za-zb)
+
+*Travail d'une force électrique : 
+
+q*E*AB*cos(α)
+
+où : q en C ; E en V.m^-1 ; AB et cos(α) en m
+
+=q*(Va-Vb)
+
+où q en C ; (Va-Vb) en V
+
+=q*Uab
+
+où q en C ; Uab en V
+
+*Si les forces ne sont pas conservatives : 
+
+Wf(1)≠W:tan(2)
+
+(1) au point 1
+(2) au point 2
+
+*Comportement de l'énergie mécanique
+        ⇒
+ΔEp = -WF
+      (ab)
+
+Em = Ec + Ep
+
+La variation de l'énergie mécanique d'un système, en mouvement
+entre deux points A et B, est égale à la somme des travaux des
+forces non-conservatives.
+Si le système ne subit que des forces conservatives, son énergie 
+mécanique est constante au cours du mouvement.
+
+ΔEm =0
+
+Si le système subit au moins une force conservative, Em diminue.

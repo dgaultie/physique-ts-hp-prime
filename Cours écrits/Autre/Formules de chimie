@@ -1,0 +1,38 @@
+~~~ Formules de chimie ~~~
+
+
+Masse Molaire
+
+      ma    | <- g
+n = ------  | <- mol
+      Ma    | <- g.mom^-1
+
+Concentration molaire
+
+      na    | <- mol
+C = ------  | <- mol.L^-1
+      V     | <- L
+
+Concentration massique
+
+
+        ma    | <- g
+Cma = ------  | <- g.L^-1
+         V    | <- L
+
+Masse volumique
+
+
+      ma    | <- g
+ρa = ------ | <- g.L^-1
+      Va    | <- L
+
+
+Densité d'un liquide
+
+
+       ρa   | <- g.L^-1
+da = ------ | <- sans unité
+      ρeau  | <- 10e3 g.L^-1
+
+               

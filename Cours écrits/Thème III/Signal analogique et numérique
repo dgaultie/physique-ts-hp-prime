@@ -1,0 +1,15 @@
+           ~~~ Signal analogique et numérique ~~~ 
+
+*Résolution
+
+     plage de mesure
+p = -----------------
+           2^n
+
+*Les trois étapes de la numérisation : 
+1) Echantillonage
+2) Quantification
+3) Numérisation           
+
+*En augmentant la fréquence d'échantillonage et la résolution
+des convertisseur, on augmente la précision.

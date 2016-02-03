@@ -1,0 +1,88 @@
+~~~ Acides & Bases ~~~
+
+*Acide : libère H^+
+
+*Base : capte H^+
+
+*Couple acide/base
+
+HA/A^-
+
+HA ↔ A^- + H^+
+
+H\3O^+ : ion oxonium
+HO^-   : ion hydroxyde
+
+*Réaction A-B : échange d'un ion H^+ entre l'acide d'un couple
+et la base d'un autre couple.
+
+*Formule du pH : 
+
+pH = -log [A]
+
+[A] = 10^(-pH)
+
+*Acide ou base faible : réaction avec l'eau
+non totale.
+
+
+*Constante d'acidité d'un couple acide-base AH/A^- !
+
+	  [A^-]eq*[H\3O^+]eq
+Ka = --------------------
+            [HA]eq
+
+pKa = -log Ka
+
+Ka = 10^(-pKa)            
+
+                [A-]eq
+pH = pKa + log --------
+                [HA]eq
+
+A^- : Base
+HA  : Acide                
+
+
+            [AH]=[A^-]
++ d'acidité      + de basicité
+----------------|----------------
+             pH=pKa
+
+
+*Bases fortes : pH = 14 + log C
+
+HCl + H\2O -> Cl^- + H\3O^-
+
+     H\2O
+NaOH ---> Na^+ + HO^-             
+
+*Basicité force et acidité forte : réaction exothermique
+57kJ.mol^-1
+
+
+*Autoprotolyse de l'eau : 
+
+  H\2O + H\2O
+       ↔
+HO^-aq + H\3O^+aq
+
+*Produit ionique de l'eau : 
+
+Ke = [H\3O^+]eq*[HO^-]eq
+
+
+Ke = 1.0e-14
+pKe = -log Ke
+Ke = 10^(-pKe)
+pKe = 14.0
+
+*Variations du pH
+
+pH<7 -> [H\3O^+]>[HO^-]
+pH>7 -> [H\3O^+]<[HO^-]
+pH=7 -> [H\3O^+]=[HO^-]
+
+*Solution neutre : solution dont la composition est telle
+que le pH varie peu par ajout de petites quantitées d'acide
+ou de base ou par dilution.

@@ -1,0 +1,31 @@
+~~~ Transmettre et stocker l'information ~~~
+
+*Bit : 0 ou 1
+
+*Octet/byte : 8bit
+
+*1 ko = 2e10 o = 1024 o
+
+*1 Mo = 2e20 o = 1024^2 o
+
+*1 Go = 2e30 o = 1024^3 o
+
+*Coefficient d'atténuation : 
+     
+     A     10      /Pe\
+α = --- = ---- log(----)
+     L      L      \Ps/
+
+
+*Débit binaire : 
+
+     n
+D = ----
+     Δt
+
+
+*Deux types de propagation : 
+-Guidée (fil)
+-Libre (sans fil)
+
+     

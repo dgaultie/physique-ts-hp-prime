@@ -1,0 +1,84 @@
+~~~ Propriétés des ondes ~~~
+
+
+La dimension de l'obstacle doit être proche de λ
+
+Schéma : Extinctions ►
+
+WAIT();
+PRINT();
+RECT();
+
+LOCAL I=55;
+LOCAL J=20;
+LINE_P(40+J,26+I,40+J,58+I);
+LINE_P(40+J,70+I,40+J,100+I);
+LINE_P(252+J,2+I,252+J,126+I);
+LINE_P(36+J,70+I,20+J,86+I);
+LINE_P(40+J,64+I,252+J,64+I);
+LINE_P(40+J,64+I,252+J,84+I);
+LINE_P(40+J,64+I,252+J,44+I);
+LINE_P(160+J,64+I,158+J,74+I);
+
+TEXTOUT_P("θ",165+J,63+I);
+TEXTOUT_P("I",10+J,83+I);
+
+WAIT();
+RECT_P();
+
+θ = λ/a
+
+*Diffraction par fente de 1 mm = diffraction
+par fil de 1 mm
+
+* λ plus grand : lumière plus déviée
+
+*Interférences : deux ondes se superposent, leur 
+amplitude s'ajoutent.
+Deux sources synchrones, même λ, en phase.
+
+Schéma : Interférences ►
+
+PRINT();
+RECT();
+
+LINE_P(50,204,287,204);
+LINE_P(50,204,50,150);
+LINE_P(50,135,50,106);
+LINE_P(50,90,50,35);
+LINE_P(287,204,287,35);
+LINE_P(35,98,287,80);
+LINE_P(35,142.5,287,80);
+LINE_P(35,98,35,142.5);
+LINE_P(295,80,295,120.5);
+LINE_P(50,120.5,287,120.5,#CC0000);
+
+TEXTOUT_P("a",40,112);
+TEXTOUT_P("D",168.5,204);
+TEXTOUT_P("x",300,92.5);
+
+WAIT();
+RECT_P();
+
+*Différence de marche :
+
+δ = a*x/D
+
+*Deux ondes en phase :
+
+δ = k*λ
+
+*En opposition de phase :
+
+δ = (k+1/2)*λ
+
+*Effet Doppler
+
+Quand l'objet s'éloigne :
+fr = fe*c/c+v
+
+Quand l'objet d'approche :
+fr = fe*c/c-v
+
+fr = fréquence reçue
+fe = fréquence émise
