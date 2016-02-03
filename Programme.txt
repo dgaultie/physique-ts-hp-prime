@@ -1,4 +1,3 @@
-//Menus
 MENU_THEME1();
 MENU_THEME2();
 MENU_THEME3();
@@ -29,6 +28,7 @@ T3_EEE();
 //Autre
 T4_FC();
 T4_C();
+fonctions_chimiques();
 
 TS();
 EXPORT TS()
@@ -683,62 +683,7 @@ END;
 //Transfert en chimie organique
 T2_TEO()
 BEGIN
-PRINT("
-                     ~~~ Transfert chimie organique ~~~
-
-
-*Différentes couches électroniques :
-- Couche K : 2 électrons
-- Couche L : 8 
-- Couche M : 18
-
-*Tous les atomes cherchent à former des liaisons de covalence
-ou des ions de façon à acquiérir la structure électronique du
-gaz rare életroniquement le plus proche. Pour cela il suivent
-la règle du Duet ou de l'Octet.
-
-*Représentation de Lewis : il s'agit d'une représentation d'une molécule
-en formule semi-developpée sur laquelle on fait apparaître les liaisons 
-covalentes et les doublets non-liants de chaque atome.
-
-*L'électronégativité est une grandeur relative qui traduit l'aptitude d'un
-atome A à attirer à lui le doublet d'électron qui l'associe à une autre atome
-B par une liaison covalente.
-
-*Plus l'atome est électronégatif, plus il attire les électrons. L'atome porte
-alors une charger partielle négative (-Δ), l'autre autome auquel il est lié se 
-voit attribuer une charge partielle (+Δ).
-
-*Site donneur de doublets d'électrons : dans un édifice chimique, un atome
-porteur de doublet(s) non-liant(s) ou pourteur d'une charge électrique négative (-)
-est un site donneur de doublets d'électrons. Un tel site est appelée Nucléophile.
-Site donneur : site riche en électrons.
-
-*Site accepteur de doublet d'électrons : dans un édifice chimique, un atome porteur
-d'une charge électrique positive (+) est un site accepteur de doublets d'électrons.
-Un tel site est appelé site électrophile.
-
-*Mécanisme réactionnel : apsect microscopique d'une réaction. Lors d'une transformation,
-l'ensemble des réactions qui se produisent au niveau microscopique constitue le 
-mécanisme réactionnel. Chacune de ces réaction est une étape du mécanisme réactionnel de
-l'interraction entre un site donneur et accepteur de doublets d'électrons.
-
-*Le déplacement des doublets d'électrons : le mouvement de ce doublet d'électrons peut 
-être représenté par une flèche courbé, reliant le site donneur au site accepteur du doublet 
-d'électrons. Ces flèches courbés permettent d'expliquer la formation ou la rupture
-des liaisons au cours de ces réactions.
-La flèche part toujours d'un doublet d'électrons et point vers le site accepteur.
-
-*Substitution : dans une réaction de substitution, un atome (ou un groupe d'atomes)
-est remplacé par une autre atome (ou groupe d'atomes).
-
-*Addition : dans une réaction d'addition, des atomes ou des groupes d'atomes sont ajoutés
-aux atomes d'une liaison multiple.
-
-*Elimination : dans une réaction d'élimination, des atomes ou des groupes d'atomes portés 
-par des atomes adjacents, sont éliminés pour former une liaison multiple.
-
-");
+PRINT("Prochainement ! Bug à élucider (crash avec ce cours)...");
 END;
 
 //Physique quantique & Laser
@@ -857,57 +802,7 @@ END;
 //Représentation spatiale
 T2_RS()
 BEGIN
-PRINT("
-                                         ~~~ Représentation spatiale ~~~
-
-
-*Isomérie : deux molécules ayant la même formule brute mais des formules semi-developpées différentes.
-
-*Conformation d'une molécule : la liaison simple entre deux atomes de carbone permet la libre rotation des groupes autour
-de cette liaison.
-
-*Stabilité de la molécule : une molécule est plus stable (avec un minimum d'énergie) dans une conformation decalée.
-
-*Carbone asymetrique : c'est un carbone tétraedrique possédant 4 voisins (atomes ou groupe d'atomes) différents. 
-On le note C*.
-
-*Molécule chirale : molécule qui n'est pas superposable à son image dans un miroir plan.
-
-*Conditions de chiralite :
-1) Non superposable à son image dans un miroir
-
-2) Possède UN carbone asymetrique
-
-*Stéreoisomerie : isomérie qui diffère par la disposition dans l'espace des atomes constituants une molécule.
-
-*Enantiomères : stéreoisomeres possèdant un carbone asymetrique donc non superposable à leur image dans un miroir.
-
-*Distéreoisomères :stéréoisomeres non superposables et non symétriques dans un miroir plan. (Stéréoisomeres différents des
-énantiomères)
-
-*La rotation autour d'une double liaison C=C est IMPOSSIBLE.
-
-*Pour déterminer la nature Z ou E du diastéreoisomère, on regarde la position des groupes les plus massifs reliés aux 
-atomes de carbone de la liaison C=C par rapport a l'axe de la double liaison.
-Z : Du même côté
-E : De part et d'autre
-
-*Lorsqu'une molécule possède plusieurs carbones asymètriques, elle présente des énantiomères et des diastéreoisomères.
-
-*Enantiomères : temps fusion et ébultition identique. Propriétés chimiques identiques sauf dans le cas de réactions
-avec d'autres molécules chirales.
-
-*Diastéreoisomères : temps fusion et ébulition différents, propriétés chimiques différentes
-
-*Le mélange de deux énantiomères en proportions égales est appelé Racemique.
-
-*Lors d'une réaction de synthèse il est très difficile voire impossible de produire l'un ou l'autre uniquement des énantiomères.
-
-*Lors d'une réaction naturelle, il ne se forme qu'un seul des deux énantiomères.
-
-*La chiralite d'une molécule a un rôle essentiel dans les réactions biochimiques.
-
-");
+PRINT("Prochainement ! Bug à élucider (crash avec ce cours)...");
 END;
 
 //Relativité
