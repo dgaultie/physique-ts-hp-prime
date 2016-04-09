@@ -24,4 +24,4 @@ Cette version n'est pas définitive, j'encourage vivement les motivés à édite
 Programme original par Shyked.
 Ce programme est sous licence Creative Commons 2.0 BY-SA. (http://goo.gl/afFdzz)
 
-V.1.5
+V.1.5 
