@@ -18,6 +18,7 @@ T2_MO();
 T2_RS();
 T2_R();
 T2_O();
+T2_TET();
 //Thème III
 T3_DE();
 T3_DT();
@@ -26,19 +27,19 @@ T3_TSI();
 T3_SAN();
 T3_EEE();
 //Autre
-T4_FC();
+T4_FU();
 T4_C();
 fonctions_chimiques();
 
-TS();
-EXPORT TS()
+Physique_TS();
+EXPORT Physique_TS()
 BEGIN
 
 LOCAL A=0,B=0,C=0,D=0,E=0,F=0,G=0,H=0;
 LOCAL I=0,J=0,K=0,L=0,M=0,N=0,O=0,Q=0;
 LOCAL P=0,R=0,S=0,T=0,U=0,V=0,W=0,X=0;
 
-CHOOSE(A,"Choisissez un thème", "Thème I : Ondes et matières", "Thème 2 : Lois et modèles", "Thème 3 : Défis du XXI siècle", "Autre");
+CHOOSE(A,"Choisissez un thème", "Thème I : Ondes et matières", "Thème II : Lois et modèles", "Thème III : Défis du XXI siècle", "Autre");
 PRINT();
 //Thème I
 IF A==1 THEN
@@ -67,7 +68,7 @@ END;
 //Menu Thème 1
 MENU_THEME1()
 BEGIN
-CHOOSE(B, "Thème I", "Ondes et particules", "Ondes périodique/acoustiques", "Propriétés des ondes");
+CHOOSE(B, "Thème I", "Ondes et particules", "Ondes périodique/acoustiques", "Propriétés des ondes", "Menu Principal");
 
 //Ondes et particules
 IF B==1 THEN
@@ -84,12 +85,17 @@ IF B==3 THEN
 T1_PO();
 END;
 
+//Menu Principal
+IF B==4 THEN
+Physique_TS();
+END;
+
 END;
 
 //Menu Thème 2
 MENU_THEME2()
 BEGIN
-CHOOSE(C,"Thème II", "Cinématique & Newton", "Mvmt dans un champ uniforme", "Travail et énergie mécanique", "Réaction & Cinématique", "Acides & Bases", "Transfert en chimie organique", "Physique quantique & Laser", "Molécules organiques", "Représentation spatiale", "Relativité", "Oscillations");
+CHOOSE(C,"Thème II", "Cinématique & Newton", "Mvmt dans un champ uniforme", "Travail et énergie mécanique", "Réaction & Cinématique", "Acides & Bases", "Transfert en chimie organique", "Physique quantique & Laser", "Molécules organiques", "Représentation spatiale", "Relativité", "Oscillations", "Transferts thermiques", "Menu Principal");
 
 //Cinématique & Newton
 IF C==1 THEN
@@ -146,12 +152,22 @@ IF C==11 THEN
 T2_O();
 END;
 
+//Transferts d'énergie thermiques
+IF C==12 THEN
+T2_TET();
+END;
+
+//Menu Principal
+IF C==13 THEN
+Physique_TS();
+END;
+
 END;
 
 //Menu Thème 3
 MENU_THEME3()
 BEGIN
-CHOOSE(D,"Thème III", "Dosages par étalonnage", "Dosages par titras", "Synthèses organiques", "Transmettre et stocker l'info", "Signal analogique et numérique", "Enjeux pour la planète");
+CHOOSE(D,"Thème III", "Dosages par étalonnage", "Dosages par titras", "Synthèses organiques", "Transmettre et stocker l'info", "Signal analogique et numérique", "Enjeux pour la planète", "Menu Principal");
 
 //Dosages par étalonnage
 IF D==1 THEN
@@ -183,22 +199,33 @@ IF D==6 THEN
 T3_EEE();
 END;
 
+//Menu Principal
+IF D==7 THEN
+Physique_TS();
+END;
+
 END;
 
 //Menu Autre
 MENU_AUTRE()
 BEGIN
-CHOOSE(E,"-Autre-", "Formules de Chimie", "Crédits");
+CHOOSE(E,"-Autre-", "Formules utiles", "Crédits", "Menu Principal");
 
-//Formule de Chimie
+//Formule utiles
 IF E==1 THEN
-T4_FC();
+T4_FU();
 END;
 
 //Crédits
 IF E==2 THEN
 T4_C();
 END;
+
+//Menu Principal
+IF E==3 THEN
+Physique_TS();
+END;
+
 END;
 
 //--------------------Thème I --------------------\\
@@ -509,7 +536,7 @@ où q en C ; Uab en V
 *Si les forces ne sont pas conservatives : 
 
 Wf(1)≠W:tan(2)
-
+     
 (1) au point 1
 (2) au point 2
 
@@ -683,7 +710,132 @@ END;
 //Transfert en chimie organique
 T2_TEO()
 BEGIN
-PRINT("Prochainement ! Bug à élucider (crash avec ce cours)...");
+LOCAL   white:=rgb(255,255,255),
+        black:=rgb(0,0,0),
+        red:=rgb(255,0,0),        
+        green:=rgb(0,255,0),
+        blue:=rgb(0,0,255);
+
+
+DIMGROB_P(G1,320,240);                 //  Define working space (full screen)
+RECT(G1);                                 //  Clear working space
+
+
+TEXTOUT_P("       ~~~ Transfert chimie organique ~~~",G1,0,1,4, red); 
+
+TEXTOUT_P("*Différentes couches électroniques :",G1,0,30,2, black); 
+
+TEXTOUT_P("- Couche K : 2 électrons",G1,0,45,2, black); 
+TEXTOUT_P("- Couche L : 8 électrons",G1,0,60,2, black); 
+TEXTOUT_P("- Couche M : 18 électrons",G1,0,75,2, black); 
+
+TEXTOUT_P("*Tous les atomes cherchent à former des liaisons de",G1,0,105,2, black); 
+TEXTOUT_P("covalence ou des ions de façon à acquiérir la structure",G1,0,120,2, black); 
+TEXTOUT_P("électronique du gaz rare életroniquement le plus proche.",G1,0,135,2, black); 
+TEXTOUT_P("Pour cela il suivent la règle du Duet ou de l'Octet.",G1,0,150,2, black); 
+
+TEXTOUT_P("-> Presser une touche pour continuer...",G1,0,218,2, blue);
+
+BLIT_P(G0,0,0,320,240,G1,0,0,320,240);//Affichage
+WAIT();
+
+RECT(G1);                                 //  Clear working space
+
+TEXTOUT_P("*Représentation de Lewis : il s'agit d'une",G1,0,1,2, black); 
+TEXTOUT_P("représentation d'une molécule en formule",G1,0,15,2, black); 
+TEXTOUT_P("semi-developpée sur laquelle on fait apparaître",G1,0,30,2, black); 
+TEXTOUT_P("des liaisons covalentes et les doublets non-liants",G1,0,45,2, black); 
+TEXTOUT_P("de chaque atome.",G1,0,60,2, black); 
+
+TEXTOUT_P("*L'électronégativité est une grandeur relative qui traduit",G1,0,90,2, black); 
+TEXTOUT_P("l'aptitude d'un atome A à attirer à lui le double",G1,0,105,2, black); 
+TEXTOUT_P("d'électron qui l'associe à un autre atome B par",G1,0,120,2, black); 
+TEXTOUT_P("une liaison covalente.",G1,0,135,2, black); 
+
+TEXTOUT_P("-> Presser une touche pour continuer...",G1,0,218,2, blue);
+
+BLIT_P(G0,0,0,320,240,G1,0,0,320,240);//Affichage
+
+WAIT();
+
+RECT(G1);                                 //  Clear working space
+
+TEXTOUT_P("*Plus l'atome est électronégatif, plus il attire les",G1,0,1,2, black); 
+TEXTOUT_P("électrons. L'atome portealors une charger partielle",G1,0,15,2, black); 
+TEXTOUT_P("négative (-Δ), l'autre autome auquel il est lié se",G1,0,30,2, black); 
+TEXTOUT_P("voit attribuer une charge partielle (+Δ).",G1,0,45,2, black); 
+
+TEXTOUT_P("*Site donneur de doublets d'électrons : dans un ",G1,0,75,2, black); 
+TEXTOUT_P("édifice chimique, un atome porteur de doublet(s)",G1,0,90,2, black); 
+TEXTOUT_P("non-liant(s) ou pourteur d'une charge électrique",G1,0,105,2, black); 
+TEXTOUT_P("négative (-) est un site donneur de doublets",G1,0,120,2, black); 
+TEXTOUT_P("d'électrons. Un tel site est appelée Nucléophile.",G1,0,135,2, black); 
+TEXTOUT_P("Site donneur : site riche en électrons.",G1,0,150,2, black); 
+
+TEXTOUT_P("-> Presser une touche pour continuer...",G1,0,218,2, blue);
+
+BLIT_P(G0,0,0,320,240,G1,0,0,320,240);//Affichage
+
+RECT(G1);                                 //  Clear working space
+
+TEXTOUT_P("*Site accepteur de doublet d'électrons : dans un",G1,0,1,2, black); 
+TEXTOUT_P("édifice chimique, un atome porteur d'une charge",G1,0,15,2, black); 
+TEXTOUT_P("électrique positive (+) est un site accepteur de",G1,0,30,2, black); 
+TEXTOUT_P("doublets d'électrons.",G1,0,45,2, black); 
+TEXTOUT_P("Un tel site est appelé site électrophile.",G1,0,60,2, black); 
+
+TEXTOUT_P("*Mécanisme réactionnel : aspect microscopique",G1,0,90,2, black); 
+TEXTOUT_P("d'une réaction. Lors d'une transformation,",G1,0,105,2, black); 
+TEXTOUT_P("l'ensemble des réactions qui se produisent",G1,0,120,2, black); 
+TEXTOUT_P("au niveau microscopique constituent le mécanisme",G1,0,135,2, black); 
+TEXTOUT_P("réactionnel. Chacune de ces réactions est une étape",G1,0,150,2, black); 
+TEXTOUT_P("du mécanisme réactionnel de l'interraction entre",G1,0,165,2, black); 
+TEXTOUT_P("un site donneur et accepteur de doublets d'électrons.",G1,0,180,2, black); 
+
+TEXTOUT_P("-> Presser une touche pour continuer...",G1,0,218,2, blue);
+
+BLIT_P(G0,0,0,320,240,G1,0,0,320,240);//Affichage
+
+WAIT();
+
+RECT(G1);                                 //  Clear working space
+
+TEXTOUT_P("*Le déplacement des doublets d'électrons : le ",G1,0,1,2, black); 
+TEXTOUT_P("mouvement de ce doublet d'électrons peut être",G1,0,15,2, black); 
+TEXTOUT_P("représenté par une flèche courbé, reliant le site ",G1,0,30,2, black); 
+TEXTOUT_P("donneur au site accepteur du doublet d'électrons.",G1,0,45,2, black); 
+TEXTOUT_P("Ces flèches courbés permettent d'expliquer la",G1,0,60,2, black); 
+TEXTOUT_P("formation ou la rupture des liaisons au cours de",G1,0,75,2, black); 
+TEXTOUT_P("ces réactions.",G1,0,90,2, black); 
+TEXTOUT_P("La flèche part toujours d'un doublet d'électrons et",G1,0,105,2, black); 
+TEXTOUT_P("pointe vers le site accepteur.",G1,0,120,2, black); 
+
+TEXTOUT_P("*Substitution : dans une réaction de substitution,",G1,0,150,2, black); 
+TEXTOUT_P("un atome (ou un groupe d'atomes) est remplacé par",G1,0,165,2, black); 
+TEXTOUT_P("une autre atome (ou groupe d'atomes)",G1,0,180,2, black); 
+
+TEXTOUT_P("-> Presser une touche pour continuer...",G1,0,218,2, blue);
+
+BLIT_P(G0,0,0,320,240,G1,0,0,320,240);//Affichage
+
+WAIT();
+
+RECT(G1);                                 //  Clear working space
+
+TEXTOUT_P("*Addition : dans une réaction d'addition, des atomes",G1,0,1,2, black); 
+TEXTOUT_P("ou des groupes d'atomes sont ajoutés aux atomes d'une",G1,0,15,2, black); 
+TEXTOUT_P("liaison multiple.",G1,0,30,2, black); 
+
+TEXTOUT_P("*Elimination : dans une réaction d'élimination, des",G1,0,60,2, black); 
+TEXTOUT_P("atomes ou des groupes d'atomes portés par des atomes",G1,0,75,2, black); 
+TEXTOUT_P("adjacents, sont éliminés pour former une liaison",G1,0,90,2, black); 
+TEXTOUT_P("multiple.",G1,0,105,2, black); 
+
+TEXTOUT_P("-> Presser une touche pour terminer...",G1,0,218,2, red);
+
+BLIT_P(G0,0,0,320,240,G1,0,0,320,240);//Affichage
+
+WAIT();
 END;
 
 //Physique quantique & Laser
@@ -802,7 +954,109 @@ END;
 //Représentation spatiale
 T2_RS()
 BEGIN
-PRINT("Prochainement ! Bug à élucider (crash avec ce cours)...");
+LOCAL   white:=rgb(255,255,255),
+        black:=rgb(0,0,0),
+        red:=rgb(255,0,0),        
+        green:=rgb(0,255,0),
+        blue:=rgb(0,0,255);
+
+
+DIMGROB_P(G1,320,240);                 //  Define working space (full screen)
+RECT(G1);                                 //  Clear working space
+
+TEXTOUT_P("       ~~~ Représentation spatiale ~~~",G1,0,1,4, red); 
+
+TEXTOUT_P("*Isomérie : deux molécules ayant la même formule brute ",G1,0,30,2, black); 
+TEXTOUT_P("mais des formules semi-developpées différentes.",G1,0,45,2, black); 
+
+TEXTOUT_P("*Conformation d'une molécule : la liaison simple entre",G1,0,75,2, black); 
+TEXTOUT_P("deux atomes de carbone permet la libre rotation des",G1,0,90,2, black); 
+TEXTOUT_P("groupes autour de cette liaison.",G1,0,105,2, black); 
+
+TEXTOUT_P("*Stabilité de la molécule : une molécule est plus stable",G1,0,135,2, black); 
+TEXTOUT_P("(avec un minimum d'énergie) dans une conformation decalée.",G1,0,150,2, black); 
+ 
+TEXTOUT_P("*Carbone asymetrique : c'est un carbone tétraedrique",G1,0,180,2, black); 
+TEXTOUT_P("possédant 4 voisins (atomes ou groupe d'atomes)",G1,0,195,2, black); 
+TEXTOUT_P("différents. On le note C*.",G1,0,210,2, black);
+
+TEXTOUT_P("-> Presser une touche pour continuer...",G1,0,227,2, blue);
+
+BLIT_P(G0,0,0,320,240,G1,0,0,320,240);//Affichage
+
+WAIT();
+
+RECT(G1);                                 //  Clear working space
+
+TEXTOUT_P("*Molécule chirale : molécule qui n'est pas superposable à",G1,0,1,2, black); 
+TEXTOUT_P("son image dans un miroir plan.",G1,0,15,2, black); 
+
+TEXTOUT_P("*Conditions de chiralite :",G1,0,45,2, black); 
+TEXTOUT_P("  - Non superposable à son image dans un miroir",G1,0,60,2, black); 
+TEXTOUT_P("  - Possède UN carbone asymetrique",G1,0,75,2, black); 
+
+TEXTOUT_P("*Stéreoisomerie : isomérie qui diffère par la disposition",G1,0,105,2, black); 
+TEXTOUT_P("dans l'espace des atomes constituants une molécule.",G1,0,120,2, black); 
+
+TEXTOUT_P("*Enantiomères : stéreoisomeres possèdant un carbone",G1,0,150,2, black); 
+TEXTOUT_P("asymetrique donc non superposable à leur image dans",G1,0,165,2, black); 
+TEXTOUT_P("un miroir.",G1,0,180,2, black); 
+
+TEXTOUT_P("*La rotation autour d'une double liaison C=C est",G1,0,195,2, black);
+TEXTOUT_P("IMPOSSIBLE.",G1,0,210,2, black);
+
+TEXTOUT_P("-> Presser une touche pour continuer...",G1,0,227,2, blue);
+
+BLIT_P(G0,0,0,320,240,G1,0,0,320,240);//Affichage
+
+WAIT();
+
+RECT(G1);                                 //  Clear working space
+
+TEXTOUT_P("*Pour déterminer la nature Z ou E du diastéreoisomère, on",G1,0,1,2, black); 
+TEXTOUT_P("regarde la position des groupes les plus massifs reliés",G1,0,15,2, black); 
+TEXTOUT_P("aux atomes de carbone de la liaison C=C par rapport à",G1,0,30,2, black); 
+TEXTOUT_P("l'axe de la double liaison.",G1,0,45,2, black); 
+TEXTOUT_P("Z (zusammen = ensemble) : du même côté",G1,0,60,2, black); 
+TEXTOUT_P("E (entgegen = opposé)   : de part et d'autre",G1,0,75,2, black); 
+
+TEXTOUT_P("*Lorsqu'une molécule possède plusieurs carbones",G1,0,105,2, black); 
+TEXTOUT_P("asymétriques, elle présente des énantiomères et des",G1,0,120,2, black); 
+TEXTOUT_P("diastéreoisomères.",G1,0,135,2, black); 
+
+TEXTOUT_P("*Enantiomères : temps fusion et ébultition identique.",G1,0,165,2, black); 
+TEXTOUT_P("Propriétés chimiques identiques sauf dans le cas de",G1,0,180,2, black); 
+TEXTOUT_P("réactions avec d'autres molécules chirales.",G1,0,195,2, black); 
+
+TEXTOUT_P("-> Presser une touche pour continuer...",G1,0,227,2, blue);
+
+BLIT_P(G0,0,0,320,240,G1,0,0,320,240);//Affichage
+
+WAIT();
+
+RECT(G1);                                 //  Clear working space
+
+TEXTOUT_P("*Diastéreoisomères : temps fusion et ébulition différents, ",G1,0,1,2, black); 
+TEXTOUT_P("propriétés chimiques différentes",G1,0,15,2, black); 
+
+TEXTOUT_P("*Le mélange de deux énantiomères en proportions égales est ",G1,0,45,2, black); 
+TEXTOUT_P("appelé Racemique.",G1,0,60,2, black); 
+
+TEXTOUT_P("*Lors d'une réaction de synthèse il est très difficile",G1,0,90,2, black); 
+TEXTOUT_P("voire impossible de produire l'un ou l'autre uniquement",G1,0,105,2, black); 
+TEXTOUT_P("des énantiomères.",G1,0,120,2, black); 
+
+TEXTOUT_P("*Lors d'une réaction naturelle, il ne se forme qu'un seul",G1,0,150,2, black); 
+TEXTOUT_P("des deux énantiomères.",G1,0,165,2, black); 
+
+TEXTOUT_P("*La chiralite d'une molécule a un rôle essentiel dans les",G1,0,195,2, black); 
+TEXTOUT_P("réactions biochimiques.",G1,0,210,2, black);
+
+TEXTOUT_P("-> Presser une touche pour terminer...",G1,0,227,2, red);
+
+BLIT_P(G0,0,0,320,240,G1,0,0,320,240);//Affichage
+
+WAIT();
 END;
 
 //Relativité
@@ -866,13 +1120,64 @@ où T en s ; m est la masse en kg ; k la constante de raideur du ressort en N.m^
 ");
 END;
 
+T2_TET()
+BEGIN
+PRINT("
+  ~~~ Les transferts d'énergie thermiques ~~~
+                         
+
+*Trois types de transfert thermique : 
+  * La conduction : transfert thermique par contact qui s'effectue sans transport de matière. 
+  * La convection : transfert thermique agité par un mouvement de matière (fluide, liquide voire gazeux).
+  * Le rayonnement : émis ou absorbé par un corps, il s'accompagne d'un transfert thermique.
+
+*Variation interne d'énergie :
+
+ΔU = m.c.ΔΘ
+
+où ΔU en J ; m en kg ; c en J/kg/°C
+
+*Flux thermique à travers une paroi plane : 
+     Q
+Φ = ---
+     τ
+
+où : Φ en W ; Q en J ; τ en s
+Φ caractérise la rapidité du transfert thermique
+
+*Résistance thermique d'une paroi plane :
+
+       Θ1 - Θ2     ΔΘ
+Rth = --------- = -----
+          Φ         Φ
+
+où Rth en K/W
+
+*Expression du flux thermique : 
+
+       S
+Φ = λ.---.ΔΘ
+       C
+
+S est l'aire et e l'épaisseur
+
+où λ en W/m/K ; S en m² ; e en m
+
+*Expression de la résistance thermique
+
+        e
+Rth = ----
+       λ.S
+");       
+END;
+
 //--------------------Thème III --------------------\\
 
 //Dosages par étalonnage
 T3_DE()
 BEGIN
 PRINT("
-                     ~~~ Dosages par étalonnage ~~~ 
+                  ~~~ Dosages par étalonnage ~~~ 
 
 
 *Conductimétrie : toute solution contenant des ions dissous conduit le 
@@ -1238,11 +1543,11 @@ END;
 //--------------------Autre --------------------\\
 
 
-//Formules de Chimie
-T4_FC()
+//Formules utiles
+T4_FU()
 BEGIN
 PRINT("
-           ~~~ Formules de chimie ~~~
+          ~~~ Formules utiles ~~~
 
 
 Masse Molaire
@@ -1279,7 +1584,11 @@ Densité d'un liquide
 da = ------ | <- sans unité
       ρeau  | <- 10e3 g.L^-1
 
-               
+Ecart relatif
+
+      |théorique - expérimental|
+er = ----------------------------
+               théorique                                      
 ");
 END;
 
