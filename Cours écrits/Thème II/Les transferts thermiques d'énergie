@@ -1,0 +1,45 @@
+~~~ Les transferts d'énergie thermiques ~~~
+                         
+
+*Trois types de transfert thermique : 
+  * La conduction : transfert thermique par contact qui s'effectue sans transport de matière. 
+  * La convection : transfert thermique agité par un mouvement de matière (fluide, liquide voire gazeux).
+  * Le rayonnement : émis ou absorbé par un corps, il s'accompagne d'un transfert thermique.
+
+*Variation interne d'énergie :
+
+ΔU = m.c.ΔΘ
+
+où ΔU en J ; m en kg ; c en J/kg/°C
+
+*Flux thermique à travers une paroi plane : 
+     Q
+Φ = ---
+     τ
+
+où : Φ en W ; Q en J ; τ en s
+Φ caractérise la rapidité du transfert thermique
+
+*Résistance thermique d'une paroi plane :
+
+       Θ1 - Θ2     ΔΘ
+Rth = --------- = -----
+          Φ         Φ
+
+où Rth en K/W
+
+*Expression du flux thermique : 
+
+       S
+Φ = λ.---.ΔΘ
+       C
+
+S est l'aire et e l'épaisseur
+
+où λ en W/m/K ; S en m² ; e en m
+
+*Expression de la résistance thermique
+
+        e
+Rth = ----
+       λ.S
