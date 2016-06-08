@@ -1,4 +1,4 @@
-﻿MENU_THEME1();
+MENU_THEME1();
 MENU_THEME2();
 MENU_THEME3();
 MENU_AUTRE();
@@ -261,7 +261,7 @@ direction de la propagation de l'onde.
 
 f = 1/T
 
-v = ?/T
+v = λ/T
 ");
 END;
 
@@ -297,9 +297,9 @@ PRINT("
          ~~~ Propriétés des ondes ~~~
 
 
-La dimension de l'obstacle doit être proche de ?
+La dimension de l'obstacle doit être proche de λ
 
-Schémas : Extinctions puis Interférences ?
+Schémas : Extinctions puis Interférences ►
 ");
 
 WAIT();
@@ -316,7 +316,7 @@ LINE_P(40+J,64+I,252+J,84+I);
 LINE_P(40+J,64+I,252+J,44+I);
 LINE_P(160+J,64+I,158+J,74+I);
 
-TEXTOUT_P("?",165+J,63+I);
+TEXTOUT_P("θ",165+J,63+I);
 TEXTOUT_P("a",10+J,83+I);
 
 WAIT();
@@ -341,28 +341,28 @@ WAIT();
 RECT();
 
 PRINT("
-* Ecart angulaire : ? = ?/a
+* Ecart angulaire : θ = λ/a
 
 *Diffraction par fente de 1 mm = diffraction
 par fil de 1 mm
 
-* ? plus grand : lumière plus déviée
+* λ plus grand : lumière plus déviée
 
 *Interférences : deux ondes se superposent, leur 
 amplitude s'ajoutent.
-Deux sources synchrones, même ?, en phase.
+Deux sources synchrones, même λ, en phase.
 
 *Différence de marche :
 
-d = a*x/D
+δ = a*x/D
 
 *Deux ondes en phase :
 
-d = k*?
+δ = k*λ
 
 *En opposition de phase :
 
-d = (k+1/2)*?
+δ = (k+1/2)*λ
 
 *Effet Doppler
 
@@ -388,7 +388,7 @@ PRINT("
        ~~~ Cinématique & Newton ~~~
 
 
-* a = ?v/?t
+* a = Δv/Δt
 
 * Dérivée de bases à connaître : 
 
@@ -402,24 +402,24 @@ a  = vecteur accélération
 
 *Calcul du poids : P=m*g
 
-*Poussée d'Archimède : p=?*V*g
+*Poussée d'Archimède : π=ρ*V*g
 
-où ? : masse volumique (kg.m^-3)
+où ρ : masse volumique (kg.m^-3)
 
 *Première loi de Newton
 
-?F = 0 -> Vitesse constante
+∑F = 0 -> Vitesse constante
 
 Quantité de mouvement : 
 
 p = m*v
 
 *Deuxième loi de Newton
-?F = dp/dt
+∑F = dp/dt
 
 Masse constante : 
 
-?F = m*a
+∑F = m*a
 
 *Troisième loi de Newton
  ->      ->
@@ -456,19 +456,19 @@ la quantité de mouvement
 
 *Equations horaires :
 
-x(t) = Vo*cos(?)*t
+x(t) = Vo*cos(θ)*t
 
-z(t) = -(1/2)gt² + Vo*cos(?)*t
+z(t) = -(1/2)gt² + Vo*cos(θ)*t
 
 *Equation cartésienne : 
 
 
              -g
-z(x) = ---------------*x² + tan(?)*x
-        2(Vo*cos(?))²
+z(x) = ---------------*x² + tan(θ)*x
+        2(Vo*cos(θ))²
 
 *Force électrique : 
-?     ?
+⇒     ⇒
 F = q*E
 ");
 END;
@@ -500,19 +500,19 @@ où k : constante de raideur
 *Travail d'une force : transfert d'énergie du système soumit à 
 l'action d'une force dont le point d'application se déplace.
 
- ? ?   ? ?
- W(F) = F*AB = F*AB*cos(a)
+ ⇒ ⇒   ⇒ ⇒
+ W(F) = F*AB = F*AB*cos(α)
 (AB)
 
 où W(F) en J ; F en N ; AB en m
 
-*Conséquences de l'angle a
+*Conséquences de l'angle α
 
-- a<90° alors W>0 : Travail moteur
+- α<90° alors W>0 : Travail moteur
 
-- a=90° alors W=0 : Travail nul
+- α=90° alors W=0 : Travail nul
 
-- a>90° alors W<0 : Travail résistant
+- α>90° alors W<0 : Travail résistant
 
 
 *Travail du poids : 
@@ -521,9 +521,9 @@ m*g*(za-zb)
 
 *Travail d'une force électrique : 
 
-q*E*AB*cos(a)
+q*E*AB*cos(α)
 
-où : q en C ; E en V.m^-1 ; AB et cos(a) en m
+où : q en C ; E en V.m^-1 ; AB et cos(α) en m
 
 =q*(Va-Vb)
 
@@ -535,14 +535,14 @@ où q en C ; Uab en V
 
 *Si les forces ne sont pas conservatives : 
 
-Wf(1)?W:tan(2)
+Wf(1)≠W:tan(2)
      
 (1) au point 1
 (2) au point 2
 
 *Comportement de l'énergie mécanique
-        ?
-?Ep = -WF
+        ⇒
+ΔEp = -WF
       (ab)
 
 Em = Ec + Ep
@@ -553,7 +553,7 @@ forces non-conservatives.
 Si le système ne subit que des forces conservatives, son énergie 
 mécanique est constante au cours du mouvement.
 
-?Em =0
+ΔEm =0
 
 Si le système subit au moins une force conservative, Em diminue.
 ");
@@ -625,7 +625,7 @@ PRINT("
 
 HA/A^-
 
-HA ? A^- + H^+
+HA ↔ A^- + H^+
 
 H\\3O^+ : ion oxonium
 HO^-   : ion hydroxyde
@@ -681,7 +681,7 @@ NaOH ---> Na^+ + HO^-
 *Autoprotolyse de l'eau : 
 
   H\\2O + H\\2O
-       ?
+       ↔
 HO^-aq + H\\3O^+aq
 
 *Produit ionique de l'eau : 
@@ -762,8 +762,8 @@ RECT(G1);                                 //  Clear working space
 
 TEXTOUT_P("*Plus l'atome est électronégatif, plus il attire les",G1,0,1,2, black); 
 TEXTOUT_P("électrons. L'atome portealors une charger partielle",G1,0,15,2, black); 
-TEXTOUT_P("négative (-?), l'autre autome auquel il est lié se",G1,0,30,2, black); 
-TEXTOUT_P("voit attribuer une charge partielle (+?).",G1,0,45,2, black); 
+TEXTOUT_P("négative (-Δ), l'autre autome auquel il est lié se",G1,0,30,2, black); 
+TEXTOUT_P("voit attribuer une charge partielle (+Δ).",G1,0,45,2, black); 
 
 TEXTOUT_P("*Site donneur de doublets d'électrons : dans un ",G1,0,75,2, black); 
 TEXTOUT_P("édifice chimique, un atome porteur de doublet(s)",G1,0,90,2, black); 
@@ -848,8 +848,8 @@ PRINT("
 *Energie d'un photon
       
            h.c
-E = h.? = -----
-            ?
+E = h.ν = -----
+            λ
 
 h = 6.62606957e-34
 
@@ -863,34 +863,34 @@ où : p en kg.m.s^-1 ; m en kg ; v en m.s^-1
 
      h
 p = ---
-     ?  
+     λ  
 
 où : p en kg.m.s^-1 ; m en kg ; v en m.s^-1
 
 Excitation d'un atome : un atome peut absorber une
 certaine quantité d'énergie sous la forme de photon
-si Ep-En = h.? (=E).
+si Ep-En = h.ν (=E).
 
 Désexcitation : émission spontanée, émision d'un photon
-d'énergie Ep-En  = h.? .
+d'énergie Ep-En  = h.ν .
 
 L'émission stimulée : lorsqu'un atome dans un état
 d'énergie excité Ep, intéragit avec un photon 
-d'énergie h.?, l'atome se désexcite en émettant un photon
-de même énergie : Ep-En = h.? .
+d'énergie h.ν, l'atome se désexcite en émettant un photon
+de même énergie : Ep-En = h.ν .
 
-Schéma : Niveaux d'énergie ?
+Schéma : Niveaux d'énergie ►
 
-  ?
-  |       h.?           h.?
-Ep|. . . . . . .? ? . . . . . .?
+  ▲
+  |       h.ν           h.ν
+Ep|. . . . . . .► ◯ . . . . . .►
   |-----------------------------
   |               |             
   |               |
   |               |
-  |               | . . . . . .?
-  |               |      h.?
-  |               ?
+  |               | . . . . . .►
+  |               |      h.ν
+  |               ▼
 En|-----------------------------
 
 Les deux photons ont : 
@@ -919,7 +919,7 @@ BEGIN
 PRINT("               ~~~ Molécules organiques ~~~
 
 
-Fonctions chimiques essentielles ?
+Fonctions chimiques essentielles ►
 ");
 WAIT();
 fonctions_chimiques();
@@ -940,9 +940,9 @@ A = -log |----|
 
 où A est sans unité.         
 
-A=e\\?*l*c
+A=ε\\λ*l*c
 
-où A sans unité ; e en mol.L^-1 ; en m ? ; c en m^-1.mol^-1.L
+où A sans unité ; ε en mol.L^-1 ; en m λ ; c en m^-1.mol^-1.L
 
 *Spectroscopie RMN
 - Signaux, catégories de H.
@@ -1073,18 +1073,18 @@ Temps mesuré : durée entre deux évènements liés à un emplacement
 dans un référentiel considéré.
 
 
-                ?tempspropre
-?tempsmesuré = --------------
-                 v(1-(v/c)²)
+                Δtempspropre
+Δtempsmesuré = --------------
+                 √(1-(v/c)²)
 
 Coefficient de Lorentz : 
 
           1
-? = --------------
-     v(1-(v/c)²)
+γ = --------------
+     √(1-(v/c)²)
 
 
-?tempsmesuré = ?*?tempspropre
+Δtempsmesuré = γ*Δtempspropre
 
 ");
 END;
@@ -1104,7 +1104,7 @@ PRINT("
 *Période prorpe :
 
         /l\\
-T = 2pv(---)
+T = 2π√(---)
         \\g/
 
 où T en s ; l est la longueur en m ; g le champ de pensanteur en m.s^-2
@@ -1113,7 +1113,7 @@ où T en s ; l est la longueur en m ; g le champ de pensanteur en m.s^-2
 *Période propre avec un pendule élastique :
 
         /m\\
-T = 2pv(---)
+T = 2π√(---)
         \\k/
 
 où T en s ; m est la masse en kg ; k la constante de raideur du ressort en N.m^-1
@@ -1133,41 +1133,41 @@ PRINT("
 
 *Variation interne d'énergie :
 
-?U = m.c.?T
+ΔU = m.c.ΔΘ
 
-où ?U en J ; m en kg ; c en J/kg/°C
+où ΔU en J ; m en kg ; c en J/kg/°C
 
 *Flux thermique à travers une paroi plane : 
      Q
-F = ---
-     t
+Φ = ---
+     τ
 
-où : F en W ; Q en J ; t en s
-F caractérise la rapidité du transfert thermique
+où : Φ en W ; Q en J ; τ en s
+Φ caractérise la rapidité du transfert thermique
 
 *Résistance thermique d'une paroi plane :
 
-       T1 - T2     ?T
+       Θ1 - Θ2     ΔΘ
 Rth = --------- = -----
-          F         F
+          Φ         Φ
 
 où Rth en K/W
 
 *Expression du flux thermique : 
 
        S
-F = ?.---.?T
+Φ = λ.---.ΔΘ
        C
 
 S est l'aire et e l'épaisseur
 
-où ? en W/m/K ; S en m² ; e en m
+où λ en W/m/K ; S en m² ; e en m
 
 *Expression de la résistance thermique
 
         e
 Rth = ----
-       ?.S
+       λ.S
 ");       
 END;
 
@@ -1193,9 +1193,9 @@ conductrice.
 
 *Loi de Kohlrausch
 
-d = k.C
+δ = k.C
 
-où d en S.m^-1
+où δ en S.m^-1
 
 *Dosage conductimétrique par étalonnage, que avec les ions.
 ");
@@ -1308,7 +1308,7 @@ PRINT("
 *Coefficient d'atténuation : 
      
      A     10      /Pe\\
-a = --- = ---- log(----)
+α = --- = ---- log(----)
      L      L      \\Ps/
 
 
@@ -1316,7 +1316,7 @@ a = --- = ---- log(----)
 
      n
 D = ----
-     ?t
+     Δt
 
 
 *Deux types de propagation : 
@@ -1573,16 +1573,16 @@ Masse volumique
 
 
       ma    | <- g
-?a = ------ | <- g.L^-1
+ρa = ------ | <- g.L^-1
       Va    | <- L
 
 
 Densité d'un liquide
 
 
-       ?a   | <- g.L^-1
+       ρa   | <- g.L^-1
 da = ------ | <- sans unité
-      ?eau  | <- 10e3 g.L^-1
+      ρeau  | <- 10e3 g.L^-1
 
 Ecart relatif
 
